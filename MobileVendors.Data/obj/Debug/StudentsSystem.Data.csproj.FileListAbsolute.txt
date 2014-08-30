@@ -1,0 +1,12 @@
+C:\Users\ShOnZi\Desktop\TelerikAcademy\Databases\Homework\CodeFirst\StudentsSystem.Data\obj\Debug\StudentsSystem.Data.csprojResolveAssemblyReference.cache
+C:\Users\ShOnZi\Desktop\TelerikAcademy\Databases\Homework\CodeFirst\StudentsSystem.Data\bin\Debug\StudentsSystem.Data.dll
+C:\Users\ShOnZi\Desktop\TelerikAcademy\Databases\Homework\CodeFirst\StudentsSystem.Data\bin\Debug\StudentsSystem.Data.pdb
+C:\Users\ShOnZi\Desktop\TelerikAcademy\Databases\Homework\CodeFirst\StudentsSystem.Data\bin\Debug\EntityFramework.dll
+C:\Users\ShOnZi\Desktop\TelerikAcademy\Databases\Homework\CodeFirst\StudentsSystem.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ShOnZi\Desktop\TelerikAcademy\Databases\Homework\CodeFirst\StudentsSystem.Data\bin\Debug\StudentsSystem.Models.dll
+C:\Users\ShOnZi\Desktop\TelerikAcademy\Databases\Homework\CodeFirst\StudentsSystem.Data\bin\Debug\StudentsSystem.Models.pdb
+C:\Users\ShOnZi\Desktop\TelerikAcademy\Databases\Homework\CodeFirst\StudentsSystem.Data\bin\Debug\EntityFramework.xml
+C:\Users\ShOnZi\Desktop\TelerikAcademy\Databases\Homework\CodeFirst\StudentsSystem.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ShOnZi\Desktop\TelerikAcademy\Databases\Homework\CodeFirst\StudentsSystem.Data\obj\Debug\StudentsSystem.Data.dll
+C:\Users\ShOnZi\Desktop\TelerikAcademy\Databases\Homework\CodeFirst\StudentsSystem.Data\obj\Debug\StudentsSystem.Data.pdb
+C:\Users\ShOnZi\Desktop\TelerikAcademy\Databases\Homework\CodeFirst\StudentsSystem.Data\bin\Debug\StudentsSystem.Data.dll.config

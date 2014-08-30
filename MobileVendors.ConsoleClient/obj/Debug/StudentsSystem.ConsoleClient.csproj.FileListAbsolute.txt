@@ -1,0 +1,17 @@
+C:\Users\ShOnZi\Desktop\TelerikAcademy\Databases\Homework\CodeFirst\StudentsSystem.ConsoleClient\bin\Debug\StudentsSystem.ConsoleClient.exe.config
+C:\Users\ShOnZi\Desktop\TelerikAcademy\Databases\Homework\CodeFirst\StudentsSystem.ConsoleClient\bin\Debug\StudentsSystem.ConsoleClient.exe
+C:\Users\ShOnZi\Desktop\TelerikAcademy\Databases\Homework\CodeFirst\StudentsSystem.ConsoleClient\bin\Debug\StudentsSystem.ConsoleClient.pdb
+C:\Users\ShOnZi\Desktop\TelerikAcademy\Databases\Homework\CodeFirst\StudentsSystem.ConsoleClient\bin\Debug\StudentsSystem.Data.dll
+C:\Users\ShOnZi\Desktop\TelerikAcademy\Databases\Homework\CodeFirst\StudentsSystem.ConsoleClient\bin\Debug\StudentsSystem.Models.dll
+C:\Users\ShOnZi\Desktop\TelerikAcademy\Databases\Homework\CodeFirst\StudentsSystem.ConsoleClient\bin\Debug\EntityFramework.dll
+C:\Users\ShOnZi\Desktop\TelerikAcademy\Databases\Homework\CodeFirst\StudentsSystem.ConsoleClient\bin\Debug\StudentsSystem.Data.pdb
+C:\Users\ShOnZi\Desktop\TelerikAcademy\Databases\Homework\CodeFirst\StudentsSystem.ConsoleClient\bin\Debug\StudentsSystem.Models.pdb
+C:\Users\ShOnZi\Desktop\TelerikAcademy\Databases\Homework\CodeFirst\StudentsSystem.ConsoleClient\bin\Debug\EntityFramework.xml
+C:\Users\ShOnZi\Desktop\TelerikAcademy\Databases\Homework\CodeFirst\StudentsSystem.ConsoleClient\obj\Debug\StudentsSystem.ConsoleClient.csprojResolveAssemblyReference.cache
+C:\Users\ShOnZi\Desktop\TelerikAcademy\Databases\Homework\CodeFirst\StudentsSystem.ConsoleClient\obj\Debug\StudentsSystem.ConsoleClient.exe
+C:\Users\ShOnZi\Desktop\TelerikAcademy\Databases\Homework\CodeFirst\StudentsSystem.ConsoleClient\obj\Debug\StudentsSystem.ConsoleClient.pdb
+C:\Users\ShOnZi\Desktop\TelerikAcademy\Databases\Homework\CodeFirst\StudentsSystem.ConsoleClient\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ShOnZi\Desktop\TelerikAcademy\Databases\Homework\CodeFirst\StudentsSystem.ConsoleClient\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ShOnZi\Desktop\TelerikAcademy\Databases\Homework\SkeletonWarriorTeam_MobileVendors\StudentsSystem.ConsoleClient\bin\Debug\StudentsSystem.ConsoleClient.exe.config
+C:\Users\ShOnZi\Desktop\TelerikAcademy\Databases\Homework\SkeletonWarriorTeam_MobileVendors\StudentsSystem.ConsoleClient\obj\Debug\StudentsSystem.ConsoleClient.exe
+C:\Users\ShOnZi\Desktop\TelerikAcademy\Databases\Homework\SkeletonWarriorTeam_MobileVendors\StudentsSystem.ConsoleClient\obj\Debug\StudentsSystem.ConsoleClient.pdb
