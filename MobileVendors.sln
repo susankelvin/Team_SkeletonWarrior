@@ -1,8 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.30501.0
-MinimumVisualStudioVersion = 10.0.40219.1
+# Visual Studio 2012
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{D74E2C4E-05C2-4A52-928B-23295FD5F3FB}"
 	ProjectSection(SolutionItems) = preProject
 		.nuget\NuGet.Config = .nuget\NuGet.Config
@@ -15,6 +13,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MobileVendors.Data", "MobileVendors.Data\MobileVendors.Data.csproj", "{6DB35A4B-74C4-4CA0-BEB9-9E0F124F42B0}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MobileVendors.Models", "MobileVendors.Models\MobileVendors.Models.csproj", "{6C4D5355-2AD2-4D69-BFD9-B84DDBA89695}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExcelInputOutput", "ExcelInputOutput\ExcelInputOutput.csproj", "{A909D58E-E966-4DD3-A8A5-7717C70AFEA6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -34,6 +34,10 @@ Global
 		{6C4D5355-2AD2-4D69-BFD9-B84DDBA89695}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6C4D5355-2AD2-4D69-BFD9-B84DDBA89695}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6C4D5355-2AD2-4D69-BFD9-B84DDBA89695}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A909D58E-E966-4DD3-A8A5-7717C70AFEA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A909D58E-E966-4DD3-A8A5-7717C70AFEA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A909D58E-E966-4DD3-A8A5-7717C70AFEA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A909D58E-E966-4DD3-A8A5-7717C70AFEA6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

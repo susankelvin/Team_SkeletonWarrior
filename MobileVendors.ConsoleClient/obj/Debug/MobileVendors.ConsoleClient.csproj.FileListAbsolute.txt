@@ -26,3 +26,6 @@ C:\Users\ShOnZi\Desktop\TelerikAcademy\Databases\Homework\SkeletonWarriorTeam_Mo
 C:\Users\ShOnZi\Desktop\TelerikAcademy\Databases\Homework\SkeletonWarriorTeam_MobileVendors\MobileVendors.ConsoleClient\bin\Debug\MobileVendors.ConsoleClient.pdb
 C:\Users\ShOnZi\Desktop\TelerikAcademy\Databases\Homework\SkeletonWarriorTeam_MobileVendors\MobileVendors.ConsoleClient\obj\Debug\MobileVendors.ConsoleClient.exe
 C:\Users\ShOnZi\Desktop\TelerikAcademy\Databases\Homework\SkeletonWarriorTeam_MobileVendors\MobileVendors.ConsoleClient\obj\Debug\MobileVendors.ConsoleClient.pdb
+C:\Users\Л\Desktop\Team_SkeletonWarrior\MobileVendors.ConsoleClient\bin\Debug\MobileVendors.ConsoleClient.exe.config
+C:\Users\Л\Desktop\Team_SkeletonWarrior\MobileVendors.ConsoleClient\obj\Debug\MobileVendors.ConsoleClient.exe
+C:\Users\Л\Desktop\Team_SkeletonWarrior\MobileVendors.ConsoleClient\obj\Debug\MobileVendors.ConsoleClient.pdb
