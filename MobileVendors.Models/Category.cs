@@ -19,7 +19,7 @@ namespace MobileVendors.Models
 
         public string Description { get; set; }
 
-        public virtual ICollection<Service> Products
+        public virtual ICollection<Service> Services
         {
             get
             {

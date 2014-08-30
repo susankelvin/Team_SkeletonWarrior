@@ -9,9 +9,9 @@
 
         public int Quantity { get; set; }
 
-        public DateTime AssignmentDate { get; set; }
+        public DateTime SubscribeDate { get; set; }
 
-        public DateTime? ExpirationDate { get; set; }
+        public int PeriodInYears { get; set; }
 
         public decimal TotalIncome { get; set; }
         
