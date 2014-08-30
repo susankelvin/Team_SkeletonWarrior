@@ -16,3 +16,12 @@ C:\Users\ShOnZi\Desktop\TelerikAcademy\Databases\Homework\SkeletonWarriorTeam_Mo
 C:\Users\ShOnZi\Desktop\TelerikAcademy\Databases\Homework\SkeletonWarriorTeam_MobileVendors\MobileVendors.Models\obj\Debug\MobileVendors.Models.csprojResolveAssemblyReference.cache
 C:\Users\ShOnZi\Desktop\TelerikAcademy\Databases\Homework\SkeletonWarriorTeam_MobileVendors\MobileVendors.Models\obj\Debug\MobileVendors.Models.dll
 C:\Users\ShOnZi\Desktop\TelerikAcademy\Databases\Homework\SkeletonWarriorTeam_MobileVendors\MobileVendors.Models\obj\Debug\MobileVendors.Models.pdb
+C:\Academy\Database\Teamwork\MobileVendors.Models\bin\Debug\MobileVendors.Models.dll
+C:\Academy\Database\Teamwork\MobileVendors.Models\bin\Debug\MobileVendors.Models.pdb
+C:\Academy\Database\Teamwork\MobileVendors.Models\bin\Debug\EntityFramework.dll
+C:\Academy\Database\Teamwork\MobileVendors.Models\bin\Debug\EntityFramework.SqlServer.dll
+C:\Academy\Database\Teamwork\MobileVendors.Models\bin\Debug\EntityFramework.xml
+C:\Academy\Database\Teamwork\MobileVendors.Models\bin\Debug\EntityFramework.SqlServer.xml
+C:\Academy\Database\Teamwork\MobileVendors.Models\obj\Debug\MobileVendors.Models.csprojResolveAssemblyReference.cache
+C:\Academy\Database\Teamwork\MobileVendors.Models\obj\Debug\MobileVendors.Models.dll
+C:\Academy\Database\Teamwork\MobileVendors.Models\obj\Debug\MobileVendors.Models.pdb
