@@ -61,3 +61,9 @@ C:\Users\plt3ch\Documents\GitHub\Team_SkeletonWarrior\MobileVendors.ConsoleClien
 C:\Users\plt3ch\Documents\GitHub\Team_SkeletonWarrior\MobileVendors.ConsoleClient\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\plt3ch\Documents\GitHub\Team_SkeletonWarrior\MobileVendors.ConsoleClient\bin\Debug\Newtonsoft.Json.xml
 C:\Users\plt3ch\Documents\GitHub\Team_SkeletonWarrior\MobileVendors.ConsoleClient\obj\Debug\MobileVendors.ConsoleClient.csprojResolveAssemblyReference.cache
+C:\Users\plt3ch\Documents\GitHub\Team_SkeletonWarrior\MobileVendors.ConsoleClient\bin\Debug\MobileVendors.MongoToSQL.dll
+C:\Users\plt3ch\Documents\GitHub\Team_SkeletonWarrior\MobileVendors.ConsoleClient\bin\Debug\MongoDB.Bson.dll
+C:\Users\plt3ch\Documents\GitHub\Team_SkeletonWarrior\MobileVendors.ConsoleClient\bin\Debug\MongoDB.Driver.dll
+C:\Users\plt3ch\Documents\GitHub\Team_SkeletonWarrior\MobileVendors.ConsoleClient\bin\Debug\MobileVendors.MongoToSQL.pdb
+C:\Users\plt3ch\Documents\GitHub\Team_SkeletonWarrior\MobileVendors.ConsoleClient\bin\Debug\MongoDB.Bson.xml
+C:\Users\plt3ch\Documents\GitHub\Team_SkeletonWarrior\MobileVendors.ConsoleClient\bin\Debug\MongoDB.Driver.xml
