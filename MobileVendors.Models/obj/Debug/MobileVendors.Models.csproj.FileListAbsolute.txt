@@ -25,3 +25,12 @@ C:\Academy\Database\Teamwork\MobileVendors.Models\bin\Debug\EntityFramework.SqlS
 C:\Academy\Database\Teamwork\MobileVendors.Models\obj\Debug\MobileVendors.Models.csprojResolveAssemblyReference.cache
 C:\Academy\Database\Teamwork\MobileVendors.Models\obj\Debug\MobileVendors.Models.dll
 C:\Academy\Database\Teamwork\MobileVendors.Models\obj\Debug\MobileVendors.Models.pdb
+C:\Users\plt3ch\Documents\GitHub\Team_SkeletonWarrior\MobileVendors.Models\bin\Debug\MobileVendors.Models.dll
+C:\Users\plt3ch\Documents\GitHub\Team_SkeletonWarrior\MobileVendors.Models\bin\Debug\MobileVendors.Models.pdb
+C:\Users\plt3ch\Documents\GitHub\Team_SkeletonWarrior\MobileVendors.Models\bin\Debug\EntityFramework.dll
+C:\Users\plt3ch\Documents\GitHub\Team_SkeletonWarrior\MobileVendors.Models\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\plt3ch\Documents\GitHub\Team_SkeletonWarrior\MobileVendors.Models\bin\Debug\EntityFramework.xml
+C:\Users\plt3ch\Documents\GitHub\Team_SkeletonWarrior\MobileVendors.Models\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\plt3ch\Documents\GitHub\Team_SkeletonWarrior\MobileVendors.Models\obj\Debug\MobileVendors.Models.csprojResolveAssemblyReference.cache
+C:\Users\plt3ch\Documents\GitHub\Team_SkeletonWarrior\MobileVendors.Models\obj\Debug\MobileVendors.Models.dll
+C:\Users\plt3ch\Documents\GitHub\Team_SkeletonWarrior\MobileVendors.Models\obj\Debug\MobileVendors.Models.pdb
