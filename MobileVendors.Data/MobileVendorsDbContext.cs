@@ -4,7 +4,7 @@
     using MobileVendors.Data.Migrations;
     using MobileVendors.Models;
 
-    public class MobileVendorsDbContext : DbContext, IMobileVendorsDbContext
+    internal class MobileVendorsDbContext : DbContext, IMobileVendorsDbContext
     {
         public MobileVendorsDbContext() : base("MobileVendorsConnection")
             

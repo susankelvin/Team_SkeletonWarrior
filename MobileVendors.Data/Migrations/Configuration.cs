@@ -6,7 +6,7 @@ namespace MobileVendors.Data.Migrations
     using MobileVendors.Data;
     using MobileVendors.Models;
 
-    public sealed class Configuration : DbMigrationsConfiguration<MobileVendorsDbContext>
+    internal sealed class Configuration : DbMigrationsConfiguration<MobileVendorsDbContext>
     {
         public Configuration()
         {

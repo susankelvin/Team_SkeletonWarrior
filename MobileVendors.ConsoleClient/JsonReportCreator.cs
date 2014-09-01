@@ -13,20 +13,20 @@
 
     public class JsonReportCreator
     {
-        private readonly MobileVendorsDbContext context;
+        private readonly IMobileVendorsData data;
 
-        public JsonReportCreator() : this(new MobileVendorsDbContext())
+        public JsonReportCreator() : this(new MobileVendorsData())
         {
         }
 
-        public JsonReportCreator(MobileVendorsDbContext context)
+        public JsonReportCreator(IMobileVendorsData data)
         {
-            this.context = context;
+            this.data = data;
         }
 
         public void CreateReport()
         {            
-            var subscriptions = this.context.Subscriptions
+            var subscriptions = this.data.Subscriptions.All()
                 .Select(s =>
                 new
                 {

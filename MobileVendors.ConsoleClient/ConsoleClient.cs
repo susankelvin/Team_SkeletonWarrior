@@ -3,22 +3,21 @@
     using System;
     using System.Linq;
     using MobileVendors.Data;
-    using MobileVendors.Models;
     using MobileVendors.MongoToSQL;
 
     internal class ConsoleClient
     {
         private static void Main()
         {
-            CreateJsonReports();
+            //CreateJsonReports();
 
             MongoToSqlExport();
         }
 
         private static void CreateJsonReports()
         {
-            var context = new MobileVendorsDbContext();
-            JsonReportCreator jrc = new JsonReportCreator(context);
+            var data = new MobileVendorsData();
+            JsonReportCreator jrc = new JsonReportCreator(data);
             jrc.CreateReport();
         }
 

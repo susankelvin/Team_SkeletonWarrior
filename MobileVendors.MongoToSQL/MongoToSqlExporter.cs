@@ -1,51 +1,50 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using MobileVendors.MongoToSQL.Models;
-
-namespace MobileVendors.MongoToSQL
+﻿namespace MobileVendors.MongoToSQL
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using MobileVendors.MongoToSQL.Models;
+    
     public class MongoToSqlExporter
     {
-        MongoDBController mongoController;
-        SQLController sqlController;
+        private readonly MongoDBController mongoController;
+
+        private readonly SQLController sqlController;
 
         public MongoToSqlExporter()
         {
-            mongoController = new MongoDBController();
-            sqlController = new SQLController();
+            this.mongoController = new MongoDBController();
+            this.sqlController = new SQLController();
         }
 
         public void ExportVendors()
         {
-            List<MongoDBVendor> vendorsFromMongo = mongoController.getDistinctVendors();
-            sqlController.PopulateVendors(vendorsFromMongo);
+            ICollection<MongoDBVendor> vendorsFromMongo = this.mongoController.GetDistinctVendors();
+            this.sqlController.PopullateVendors(vendorsFromMongo);
         }
 
         public void ExportTowns()
         {
-            List<MongoDBTown> townsFromMongo = mongoController.getDistinctTowns();
-            sqlController.PopulateTowns(townsFromMongo);
+            ICollection<MongoDBTown> townsFromMongo = this.mongoController.GetDistinctTowns();
+            this.sqlController.PopullateTowns(townsFromMongo);
         }
 
         public void ExportCategories()
         {
-            List<MongoDBCategory> categoriesFromMongo = mongoController.getDistinctCategories();
-            sqlController.PopulateCategories(categoriesFromMongo);
+            ICollection<MongoDBCategory> categoriesFromMongo = this.mongoController.GetDistinctCategories();
+            this.sqlController.PopullateCategories(categoriesFromMongo);
         }
 
         public void ExportStore()
         {
-            List<MongoDBStore> storesFromMongo = mongoController.getStores();
-            sqlController.PopulateStore(storesFromMongo);
+            ICollection<MongoDBStore> storesFromMongo = this.mongoController.GetStores();
+            this.sqlController.PopullateStores(storesFromMongo);
         }
 
         public void ExportServices()
         {
-            List<MongoDBService> servicesFromMongo = mongoController.getServices();
-            sqlController.PopulateService(servicesFromMongo);
+            ICollection<MongoDBService> servicesFromMongo = this.mongoController.GetServices();
+            this.sqlController.PopullateServices(servicesFromMongo);
         }
     }
 }

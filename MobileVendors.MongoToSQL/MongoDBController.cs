@@ -1,39 +1,31 @@
-﻿using MongoDB.Driver;
-using MongoDB.Driver.Linq;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using MobileVendors.MongoToSQL.Models;
-
-namespace MobileVendors.MongoToSQL
+﻿namespace MobileVendors.MongoToSQL
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using MobileVendors.MongoToSQL.Models;
+    using MongoDB.Driver;
+    using MongoDB.Driver.Linq;
+
     public class MongoDBController
     {
-        MongoDatabase database;
-        public MongoDBController()
-        {
-            init();
-           // 
-        }
+        private readonly MongoDatabase database;
 
-        public void init()
+        public MongoDBController()
         {
             //MongoDB
             var connectionString = "mongodb://localhost";
             var client = new MongoClient(connectionString);
             var server = client.GetServer();
-
-            database = server.GetDatabase("MobileVendors");
+            this.database = server.GetDatabase("MobileVendors");
         }
 
-        public List<MongoDBVendor> getDistinctVendors()
+        public List<MongoDBVendor> GetDistinctVendors()
         {
-            var collection = database.GetCollection<MongoDBStore>("Stores");
+            var collection = this.database.GetCollection<MongoDBStore>("Stores");
             List<MongoDBVendor> distinctVendors = new List<MongoDBVendor>();
 
-            var stores = 
+            var stores =
                 (from s in collection.AsQueryable<MongoDBStore>()
                  select s);
 
@@ -44,7 +36,7 @@ namespace MobileVendors.MongoToSQL
                 vendor.PhoneNumber = item.Vendor.PhoneNumber;
                 vendor.Email = item.Vendor.Email;
 
-                Boolean isVendorDistinct = !distinctVendors.Any(x => x.VendorName.Equals(vendor.VendorName));
+                bool isVendorDistinct = !distinctVendors.Any(x => x.VendorName.Equals(vendor.VendorName));
                 if (isVendorDistinct)
                 {
                     distinctVendors.Add(vendor);
@@ -54,9 +46,9 @@ namespace MobileVendors.MongoToSQL
             return distinctVendors;
         }
 
-        public List<MongoDBTown> getDistinctTowns()
+        public List<MongoDBTown> GetDistinctTowns()
         {
-            var collection = database.GetCollection<MongoDBStore>("Stores");
+            var collection = this.database.GetCollection<MongoDBStore>("Stores");
             List<MongoDBTown> distinctTowns = new List<MongoDBTown>();
 
             var stores =
@@ -68,7 +60,7 @@ namespace MobileVendors.MongoToSQL
                 MongoDBTown town = new MongoDBTown();
                 town.TownName = item.Town.TownName;
 
-                Boolean isTownDistinct = !distinctTowns.Any(x => x.TownName.Equals(town.TownName));
+                bool isTownDistinct = !distinctTowns.Any(x => x.TownName.Equals(town.TownName));
                 if (isTownDistinct)
                 {
                     distinctTowns.Add(town);
@@ -78,9 +70,9 @@ namespace MobileVendors.MongoToSQL
             return distinctTowns;
         }
 
-        public List<MongoDBCategory> getDistinctCategories()
+        public List<MongoDBCategory> GetDistinctCategories()
         {
-            var collection = database.GetCollection<MongoDBService>("Services");
+            var collection = this.database.GetCollection<MongoDBService>("Services");
             List<MongoDBCategory> distinctCategories = new List<MongoDBCategory>();
 
             var services =
@@ -92,7 +84,7 @@ namespace MobileVendors.MongoToSQL
                 MongoDBCategory category = new MongoDBCategory();
                 category.Description = item.Category.Description;
                 //todo
-                Boolean isTownDistinct = !distinctCategories.Any(x => x.Description.Equals(category.Description));
+                bool isTownDistinct = !distinctCategories.Any(x => x.Description.Equals(category.Description));
                 if (isTownDistinct)
                 {
                     distinctCategories.Add(category);
@@ -102,9 +94,9 @@ namespace MobileVendors.MongoToSQL
             return distinctCategories;
         }
 
-        public List<MongoDBStore> getStores()
+        public List<MongoDBStore> GetStores()
         {
-            var collection = database.GetCollection<MongoDBStore>("Stores");
+            var collection = this.database.GetCollection<MongoDBStore>("Stores");
 
             var stores =
                 (from s in collection.AsQueryable<MongoDBStore>()
@@ -113,9 +105,9 @@ namespace MobileVendors.MongoToSQL
             return stores.ToList<MongoDBStore>();
         }
 
-        public List<MongoDBService> getServices()
+        public List<MongoDBService> GetServices()
         {
-            var collection = database.GetCollection<MongoDBService>("Services");
+            var collection = this.database.GetCollection<MongoDBService>("Services");
 
             var services =
                 (from s in collection.AsQueryable<MongoDBService>()

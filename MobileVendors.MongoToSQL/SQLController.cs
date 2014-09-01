@@ -1,28 +1,22 @@
-﻿using MobileVendors.Data;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using MobileVendors.MongoToSQL.Models;
-using MobileVendors.Models;
-
-namespace MobileVendors.MongoToSQL
+﻿namespace MobileVendors.MongoToSQL
 {
-    class SQLController
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using MobileVendors.Data;
+    using MobileVendors.Models;
+    using MobileVendors.MongoToSQL.Models;
+
+    internal class SQLController
     {
-        IMobileVendorsDbContext context;
+        private readonly IMobileVendorsData data;
+
         public SQLController()
         {
-            init();
+            this.data = new MobileVendorsData();
         }
 
-        public void init()
-        {
-            context = new MobileVendorsDbContext();
-        }
-
-        public void PopulateVendors(List<MongoDBVendor> vendors)
+        public void PopullateVendors(ICollection<MongoDBVendor> vendors)
         {
             foreach (var vendor in vendors)
             {
@@ -32,12 +26,12 @@ namespace MobileVendors.MongoToSQL
                     PhoneNumber = vendor.PhoneNumber,
                     Email = vendor.Email
                 };
-                this.context.Vendors.Add(vendorSQL);
-                this.context.SaveChanges();
-            }  
+                this.data.Vendors.Add(vendorSQL);
+            }
+            this.data.SaveChanges();
         }
 
-        public void PopulateTowns(List<MongoDBTown> towns)
+        public void PopullateTowns(ICollection<MongoDBTown> towns)
         {
             foreach (var town in towns)
             {
@@ -46,12 +40,12 @@ namespace MobileVendors.MongoToSQL
                     TownName = town.TownName
                 };
 
-                this.context.Towns.Add(townSQL);
-                this.context.SaveChanges();
+                this.data.Towns.Add(townSQL);
             }
+            this.data.SaveChanges();
         }
 
-        public void PopulateCategories(List<MongoDBCategory> categories)
+        public void PopullateCategories(ICollection<MongoDBCategory> categories)
         {
             foreach (var category in categories)
             {
@@ -60,17 +54,17 @@ namespace MobileVendors.MongoToSQL
                     Description = category.Description
                 };
 
-                this.context.Categories.Add(categorySQL);
-                this.context.SaveChanges();
+                this.data.Categories.Add(categorySQL);
             }
+            this.data.SaveChanges();
         }
 
-        public void PopulateStore(List<MongoDBStore> stores)
+        public void PopullateStores(ICollection<MongoDBStore> stores)
         {
             foreach (var store in stores)
             {
-                var currentStoreTownId = findTownIdByStore(store);
-                var currentStoreVendorId = findVendorIdByStore(store);
+                var currentStoreTownId = this.FidTownIdByStore(store);
+                var currentStoreVendorId = this.FindVendorIdByStore(store);
 
                 Store storeSQL = new Store()
                 {
@@ -78,16 +72,16 @@ namespace MobileVendors.MongoToSQL
                     TownId = currentStoreTownId,
                     VendorId = currentStoreVendorId
                 };
-                this.context.Stores.Add(storeSQL);
-                this.context.SaveChanges();
+                this.data.Stores.Add(storeSQL);
             }
+            this.data.SaveChanges();
         }
 
-        public void PopulateService(List<MongoDBService> services)
+        public void PopullateServices(ICollection<MongoDBService> services)
         {
             foreach (var service in services)
             {
-                var currentServiceCategoryId = findCategoryIdByService(service);
+                var currentServiceCategoryId = this.FindCategoryIdByService(service);
 
                 Service serviceSQl = new Service()
                 {
@@ -96,14 +90,20 @@ namespace MobileVendors.MongoToSQL
                     CategoryId = currentServiceCategoryId
                 };
 
-                this.context.Services.Add(serviceSQl);
-                this.context.SaveChanges();
+                this.data.Services.Add(serviceSQl);
             }
+            this.data.SaveChanges();
         }
 
-        private int findTownIdByStore(MongoDBStore store)
+        public void PopullateSubsrciptions(int quantity, DateTime subscribeDate, int periodInYears, decimal totalIncome, int serviceId, int storeId)
         {
-            var towns = from t in this.context.Towns
+            this.data.Subscriptions.Add(new Subscription() { Quantity = quantity, SubscribeDate = subscribeDate, PeriodInYears = periodInYears, TotalIncome = totalIncome, ServiceId = serviceId, StoreId = storeId });
+            this.data.SaveChanges();
+        }
+
+        private int FidTownIdByStore(MongoDBStore store)
+        {
+            var towns = from t in this.data.Towns.All()
                         select new
                         {
                             t.Id,
@@ -119,14 +119,14 @@ namespace MobileVendors.MongoToSQL
             throw new Exception("No such town in the database");
         }
 
-        public int findVendorIdByStore(MongoDBStore store)
+        private int FindVendorIdByStore(MongoDBStore store)
         {
-            var vendors = from v in this.context.Vendors
-                        select new
-                        {
-                            v.Id,
-                            v.VendorName
-                        };
+            var vendors = from v in this.data.Vendors.All()
+                          select new
+                          {
+                              v.Id,
+                              v.VendorName
+                          };
             foreach (var vendor in vendors)
             {
                 if (vendor.VendorName.Equals(store.Vendor.VendorName))
@@ -137,14 +137,14 @@ namespace MobileVendors.MongoToSQL
             throw new Exception("No such vendor in the database");
         }
 
-        public int findCategoryIdByService(MongoDBService service)
+        private int FindCategoryIdByService(MongoDBService service)
         {
-            var categories = from c in this.context.Categories
-                          select new
-                          {
-                              c.Id,
-                              c.Description
-                          };
+            var categories = from c in this.data.Categories.All()
+                             select new
+                             {
+                                 c.Id,
+                                 c.Description
+                             };
             foreach (var category in categories)
             {
                 if (category.Description.Equals(service.Category.Description))
@@ -154,12 +154,5 @@ namespace MobileVendors.MongoToSQL
             }
             throw new Exception("No such category in the database");
         }
-
-
-        public void PopulateSubsrciption(int quantity, DateTime subscribeDate, int periodInYears, decimal totalIncome, int serviceId, int storeId)
-        {
-            this.context.Subscriptions.Add(new Subscription() { Quantity = quantity, SubscribeDate = subscribeDate, PeriodInYears = periodInYears, TotalIncome = totalIncome, ServiceId = serviceId, StoreId = storeId });
-        }
-
     }
 }

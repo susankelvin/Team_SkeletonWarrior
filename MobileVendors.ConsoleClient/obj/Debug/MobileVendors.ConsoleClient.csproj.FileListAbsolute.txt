@@ -67,3 +67,11 @@ C:\Users\plt3ch\Documents\GitHub\Team_SkeletonWarrior\MobileVendors.ConsoleClien
 C:\Users\plt3ch\Documents\GitHub\Team_SkeletonWarrior\MobileVendors.ConsoleClient\bin\Debug\MobileVendors.MongoToSQL.pdb
 C:\Users\plt3ch\Documents\GitHub\Team_SkeletonWarrior\MobileVendors.ConsoleClient\bin\Debug\MongoDB.Bson.xml
 C:\Users\plt3ch\Documents\GitHub\Team_SkeletonWarrior\MobileVendors.ConsoleClient\bin\Debug\MongoDB.Driver.xml
+C:\Users\ShOnZi\Desktop\TelerikAcademy\Databases\Homework\SkeletonWarriorTeam_MobileVendors\MobileVendors.ConsoleClient\bin\Debug\MobileVendors.MongoToSQL.dll
+C:\Users\ShOnZi\Desktop\TelerikAcademy\Databases\Homework\SkeletonWarriorTeam_MobileVendors\MobileVendors.ConsoleClient\bin\Debug\Newtonsoft.Json.dll
+C:\Users\ShOnZi\Desktop\TelerikAcademy\Databases\Homework\SkeletonWarriorTeam_MobileVendors\MobileVendors.ConsoleClient\bin\Debug\MongoDB.Bson.dll
+C:\Users\ShOnZi\Desktop\TelerikAcademy\Databases\Homework\SkeletonWarriorTeam_MobileVendors\MobileVendors.ConsoleClient\bin\Debug\MongoDB.Driver.dll
+C:\Users\ShOnZi\Desktop\TelerikAcademy\Databases\Homework\SkeletonWarriorTeam_MobileVendors\MobileVendors.ConsoleClient\bin\Debug\MobileVendors.MongoToSQL.pdb
+C:\Users\ShOnZi\Desktop\TelerikAcademy\Databases\Homework\SkeletonWarriorTeam_MobileVendors\MobileVendors.ConsoleClient\bin\Debug\Newtonsoft.Json.xml
+C:\Users\ShOnZi\Desktop\TelerikAcademy\Databases\Homework\SkeletonWarriorTeam_MobileVendors\MobileVendors.ConsoleClient\bin\Debug\MongoDB.Bson.xml
+C:\Users\ShOnZi\Desktop\TelerikAcademy\Databases\Homework\SkeletonWarriorTeam_MobileVendors\MobileVendors.ConsoleClient\bin\Debug\MongoDB.Driver.xml

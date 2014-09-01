@@ -6,8 +6,8 @@
     using System.Linq;
     using System.Linq.Expressions;
     using MobileVendors.Data;
-
-    public class GenericRepository<T> : IGenericRepository<T> where T : class
+    
+    internal class GenericRepository<T> : IGenericRepository<T> where T : class
     {
         private readonly IMobileVendorsDbContext context;
 
@@ -45,7 +45,6 @@
         {
             var entry = this.AttachIfDetached(entity);
             entry.State = EntityState.Deleted;
-
         }
 
         public void Detach(T entity)
