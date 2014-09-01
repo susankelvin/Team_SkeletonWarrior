@@ -34,8 +34,8 @@
 
         private static void ExportFromSQLite()
         {
-            var sqliteController = new SQLiteController();
-            var taxes = sqliteController.GetServicesTaxes();
+            var sqliteController = new TaxesData();
+            var taxes = sqliteController.Taxes.All();
             foreach (var tax in taxes)
             {
                 Console.WriteLine("Service name: {0} | Service tax: {1}",

@@ -67,6 +67,8 @@
     <Compile Include="Repositories\IGenericRepository.cs" />
     <Compile Include="MobileVendorsData.cs" />
     <Compile Include="MobileVendorsDbContext.cs" />
+    <Compile Include="TaxesContext.cs" />
+    <Compile Include="TaxesData.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

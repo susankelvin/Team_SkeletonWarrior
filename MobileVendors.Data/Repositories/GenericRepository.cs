@@ -13,6 +13,11 @@
 
         private readonly IDbSet<T> set;
 
+        public GenericRepository(TaxesContext context)
+        {
+            this.set = context.Set<T>();
+        }
+
         public GenericRepository(IMobileVendorsDbContext context)
         {
             this.context = context;
