@@ -1,17 +1,17 @@
-﻿namespace MobileVendors.MongoToSQL
+﻿namespace MobileVendors.Controllers
 {
     using System;
     using System.Collections.Generic;
     using System.Linq;
-    using MobileVendors.MongoToSQL.Models;
-    
-    public class MongoToSqlExporter
+    using MobileVendors.Models.MongoDBModels;
+
+    public class MongoToSqlController
     {
         private readonly MongoDBController mongoController;
 
         private readonly SQLController sqlController;
 
-        public MongoToSqlExporter()
+        public MongoToSqlController()
         {
             this.mongoController = new MongoDBController();
             this.sqlController = new SQLController();

@@ -2,34 +2,45 @@
 {
     using System;
     using System.Linq;
+    using MobileVendors.Controllers;
     using MobileVendors.Data;
-    using MobileVendors.MongoToSQL;
 
     internal class ConsoleClient
     {
         private static void Main()
         {
             //CreateJsonReports();
-
-            MongoToSqlExport();
+            //MongoToSqlExport();
+            ExportFromSQLite();
         }
 
         private static void CreateJsonReports()
         {
             var data = new MobileVendorsData();
-            JsonReportCreator jrc = new JsonReportCreator(data);
+            JsonReportController jrc = new JsonReportController(data);
             jrc.CreateReport();
         }
 
         private static void MongoToSqlExport()
         {
-            MongoToSqlExporter exporter = new MongoToSqlExporter();
+            MongoToSqlController exporter = new MongoToSqlController();
 
             exporter.ExportVendors();
             exporter.ExportTowns();
             exporter.ExportCategories();
             exporter.ExportStore();
             exporter.ExportServices();
+        }
+
+        private static void ExportFromSQLite()
+        {
+            var sqliteController = new SQLiteController();
+            var taxes = sqliteController.GetServicesTaxes();
+            foreach (var tax in taxes)
+            {
+                Console.WriteLine("Service name: {0} | Service tax: {1}",
+                    tax.ServiceName, tax.Tax);
+            }
         }
     }
 }

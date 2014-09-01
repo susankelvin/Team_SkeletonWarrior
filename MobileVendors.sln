@@ -16,7 +16,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MobileVendors.Data", "Mobil
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MobileVendors.Models", "MobileVendors.Models\MobileVendors.Models.csproj", "{6C4D5355-2AD2-4D69-BFD9-B84DDBA89695}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MobileVendors.MongoToSQL", "MobileVendors.MongoToSQL\MobileVendors.MongoToSQL.csproj", "{458E00C4-85D0-44DB-9A96-9B65D6EA67B5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MobileVendors.Controllers", "MobileVendors.Controllers\MobileVendors.Controllers.csproj", "{458E00C4-85D0-44DB-9A96-9B65D6EA67B5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

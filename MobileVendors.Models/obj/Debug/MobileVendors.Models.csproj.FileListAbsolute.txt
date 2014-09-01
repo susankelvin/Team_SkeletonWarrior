@@ -34,3 +34,11 @@ C:\Users\plt3ch\Documents\GitHub\Team_SkeletonWarrior\MobileVendors.Models\bin\D
 C:\Users\plt3ch\Documents\GitHub\Team_SkeletonWarrior\MobileVendors.Models\obj\Debug\MobileVendors.Models.csprojResolveAssemblyReference.cache
 C:\Users\plt3ch\Documents\GitHub\Team_SkeletonWarrior\MobileVendors.Models\obj\Debug\MobileVendors.Models.dll
 C:\Users\plt3ch\Documents\GitHub\Team_SkeletonWarrior\MobileVendors.Models\obj\Debug\MobileVendors.Models.pdb
+C:\Users\ShOnZi\Desktop\TelerikAcademy\Databases\Homework\SkeletonWarriorTeam_MobileVendors\MobileVendors.Models\bin\Debug\System.Data.SQLite.dll
+C:\Users\ShOnZi\Desktop\TelerikAcademy\Databases\Homework\SkeletonWarriorTeam_MobileVendors\MobileVendors.Models\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\ShOnZi\Desktop\TelerikAcademy\Databases\Homework\SkeletonWarriorTeam_MobileVendors\MobileVendors.Models\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\ShOnZi\Desktop\TelerikAcademy\Databases\Homework\SkeletonWarriorTeam_MobileVendors\MobileVendors.Models\bin\Debug\System.Data.SQLite.xml
+C:\Users\ShOnZi\Desktop\TelerikAcademy\Databases\Homework\SkeletonWarriorTeam_MobileVendors\MobileVendors.Models\bin\Debug\MongoDB.Bson.dll
+C:\Users\ShOnZi\Desktop\TelerikAcademy\Databases\Homework\SkeletonWarriorTeam_MobileVendors\MobileVendors.Models\bin\Debug\MongoDB.Driver.dll
+C:\Users\ShOnZi\Desktop\TelerikAcademy\Databases\Homework\SkeletonWarriorTeam_MobileVendors\MobileVendors.Models\bin\Debug\MongoDB.Bson.xml
+C:\Users\ShOnZi\Desktop\TelerikAcademy\Databases\Homework\SkeletonWarriorTeam_MobileVendors\MobileVendors.Models\bin\Debug\MongoDB.Driver.xml

@@ -1,43 +1,37 @@
-﻿namespace MobileVendors.ConsoleClient
+﻿namespace MobileVendors.Controllers
 {
     using System;
-    using System.Collections;
-    using System.Collections.Generic;
+    using System.IO;
     using System.Linq;
-
+    using MobileVendors.Data;
     using Newtonsoft.Json.Linq;
 
-    using MobileVendors.Data;
-    using MobileVendors.Models;
-    using System.IO;
-
-    public class JsonReportCreator
+    public class JsonReportController
     {
         private readonly IMobileVendorsData data;
 
-        public JsonReportCreator() : this(new MobileVendorsData())
+        public JsonReportController() : this(new MobileVendorsData())
         {
         }
 
-        public JsonReportCreator(IMobileVendorsData data)
+        public JsonReportController(IMobileVendorsData data)
         {
             this.data = data;
         }
 
         public void CreateReport()
-        {            
+        { 
             var subscriptions = this.data.Subscriptions.All()
-                .Select(s =>
-                new
-                {
-                    Id = s.Id,
-                    ProductName = s.Service.ServiceName,
-                    VendorName = s.Store.Vendor.VendorName,
-                    TotalIncome = s.TotalIncome,
-                    Quantity = s.Quantity
-                })
-                .GroupBy(s => s.ProductName)                
-                .ToList();
+                                    .Select(s => new
+                                    {
+                                        Id = s.Id,
+                                        ProductName = s.Service.ServiceName,
+                                        VendorName = s.Store.Vendor.VendorName,
+                                        TotalIncome = s.TotalIncome,
+                                        Quantity = s.Quantity
+                                    })
+                                    .GroupBy(s => s.ProductName)                
+                                    .ToList();
 
             foreach (var sub in subscriptions)
             {
@@ -46,7 +40,6 @@
                 product["product-id"] = first.Id;
                 product["product-name"] = first.ProductName;
                 product["vendor-name"] = first.VendorName;
-
 
                 int totalQuantity = 0;
                 decimal totalIncome = 0;
@@ -60,13 +53,13 @@
                 product["total-quantity-sold"] = totalQuantity;
                 product["total-incomes"] = totalIncome;
                 
-                WriteReportToFile(product.ToString(), first.Id.ToString());
+                this.WriteReportToFile(product.ToString(), first.Id.ToString());
             }
         }
 
         public void WriteReportToFile(string json, string id)
         {
-            string filePath = @"..\..\Json-Reports\" + id + ".json";
+            string filePath = string.Format("{0}{1}.json", @"..\..\Json-Reports\", id);
             File.WriteAllText(filePath, json);
         }
     }

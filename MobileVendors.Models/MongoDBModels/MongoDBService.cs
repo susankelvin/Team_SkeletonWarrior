@@ -1,12 +1,7 @@
-﻿using MongoDB.Bson;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace MobileVendors.MongoToSQL.Models
+﻿namespace MobileVendors.Models.MongoDBModels
 {
+    using MongoDB.Bson;
+
     public class MongoDBService
     {
         public ObjectId Id { get; set; }

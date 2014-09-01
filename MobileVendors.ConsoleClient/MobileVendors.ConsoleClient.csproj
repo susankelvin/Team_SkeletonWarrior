@@ -42,13 +42,18 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
-    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.SQLite">
+      <HintPath>..\packages\System.Data.SQLite.Core.1.0.93.0\lib\net45\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SQLite.EF6">
+      <HintPath>..\packages\System.Data.SQLite.EF6.1.0.93.0\lib\net45\System.Data.SQLite.EF6.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SQLite.Linq">
+      <HintPath>..\packages\System.Data.SQLite.Linq.1.0.93.0\lib\net45\System.Data.SQLite.Linq.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -57,7 +62,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ConsoleClient.cs" />
-    <Compile Include="JsonReportCreator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -65,6 +69,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\MobileVendors.Controllers\MobileVendors.Controllers.csproj">
+      <Project>{458e00c4-85d0-44db-9a96-9b65d6ea67b5}</Project>
+      <Name>MobileVendors.Controllers</Name>
+    </ProjectReference>
     <ProjectReference Include="..\MobileVendors.Data\MobileVendors.Data.csproj">
       <Project>{6db35a4b-74c4-4ca0-beb9-9e0f124f42b0}</Project>
       <Name>MobileVendors.Data</Name>
@@ -72,10 +80,6 @@
     <ProjectReference Include="..\MobileVendors.Models\MobileVendors.Models.csproj">
       <Project>{6c4d5355-2ad2-4d69-bfd9-b84ddba89695}</Project>
       <Name>MobileVendors.Models</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\MobileVendors.MongoToSQL\MobileVendors.MongoToSQL.csproj">
-      <Project>{458e00c4-85d0-44db-9a96-9b65d6ea67b5}</Project>
-      <Name>MobileVendors.MongoToSQL</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

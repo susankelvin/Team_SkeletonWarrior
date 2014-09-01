@@ -1,11 +1,11 @@
-﻿namespace MobileVendors.MongoToSQL
+﻿namespace MobileVendors.Controllers
 {
     using System;
     using System.Collections.Generic;
     using System.Linq;
-    using MobileVendors.MongoToSQL.Models;
     using MongoDB.Driver;
     using MongoDB.Driver.Linq;
+    using MobileVendors.Models.MongoDBModels;
 
     public class MongoDBController
     {
