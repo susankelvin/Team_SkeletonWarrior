@@ -4,14 +4,13 @@
     using System.Collections.Generic;
     using System.Data.OleDb;
     using System.Linq;
-
     using MobileVendors.Data;
 
-    public class ExcelController
+    public class ExcelExportController
     {
         private readonly OleDbConnection connection;
 
-        public ExcelController(string fileName)
+        public ExcelExportController(string fileName)
         {
             string connectionString = string.Format("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=.\\{0};Extended Properties=\"Excel 12.0 XML;HDR=Yes;\"", fileName);
             this.connection = new OleDbConnection(connectionString);
@@ -20,8 +19,7 @@
         public void ExportData()
         {
             this.CreateTable();
-            var data = this.GetData();
-            this.InsertData(data);
+            this.InsertData();
         }
 
         private void CreateTable()
@@ -41,28 +39,36 @@
             this.connection.Close();
         }
 
-        private KeyValuePair<string, object>[] GetData()
+        private void InsertData()
         {
-            var pairs = new KeyValuePair<string, object>[5];
             var sqliteController = new TaxesData();
-            var tax = sqliteController.Taxes.All().First();
-            pairs[0] = new KeyValuePair<string, object>("ServiceName",tax.ServiceName);
-            pairs[3] = new KeyValuePair<string, object>("Incomes",150);
-            pairs[2] = new KeyValuePair<string, object>("Expenses",50.00);
-            pairs[1] = new KeyValuePair<string, object>("Taxes", 50.00 * tax.Tax);
-            pairs[4] = new KeyValuePair<string, object>("FinancialResult",75.00);
-            return pairs;
+            var mySqlController = new MySqlController();
+            var reports = mySqlController.GetReports();
+            var pairs = new KeyValuePair<string, object>[5];
+
+            foreach (var report in reports)
+            {
+                var tax = sqliteController.Taxes.All().First(t => t.ServiceName == report.ProductName).Tax;
+                
+                pairs[0] = new KeyValuePair<string, object>("ServiceName",report.ProductName);
+                pairs[3] = new KeyValuePair<string, object>("Incomes",report.TotalIncomes);
+                pairs[2] = new KeyValuePair<string, object>("Expenses",report.Expenses);
+                pairs[1] = new KeyValuePair<string, object>("Taxes", report.Expenses * tax);
+                pairs[4] = new KeyValuePair<string, object>("FinancialResult",report.TotalIncomes - report.Expenses * tax);
+                InsertRow(pairs);
+            }
         }
 
-        private void InsertData(KeyValuePair<string, object>[]keys)
+        private void InsertRow(KeyValuePair<string, object>[]keys)
         {
             var values = keys.Select(key => string.Format("@{0}", key.Key));
-            var command = new OleDbCommand(string.Format("INSERT INTO [FinancialResults$]({0}) VALUES ({1})",
+            var command = new OleDbCommand(string.Format(
+                "INSERT INTO [FinancialResults$]({0}) VALUES ({1})",
                 string.Join(", ", keys.Select(x => x.Key)), string.Join(", ", values)),
                 this.connection);
 
             this.connection.Open();
-           
+            
             foreach (var key in keys)
             { 
                 var parameter = command.CreateParameter();

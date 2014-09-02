@@ -1,8 +1,6 @@
 ﻿namespace MobileVendors.ConsoleClient
 {
     using System;
-    using System.Collections.Generic;
-
     using MobileVendors.Controllers;
     using MobileVendors.Data;
 
@@ -11,6 +9,7 @@
         private static void Main()
         {
             //MongoToSqlExport();
+            //ExcelReportsImportToSql();
             CreateJsonReports();
             CreateExcelReports();
         }
@@ -19,6 +18,14 @@
         {
             MongoToSqlController exporter = new MongoToSqlController();
             exporter.ExportData();
+        }
+
+        private static void ExcelReportsImportToSql()
+        {
+            string zipPath = @"..\..\..\SampleReports.zip";
+            string sheetName = "Sheet1$";
+            ExcelImportController excelImport = new ExcelImportController();
+            excelImport.GetReports(zipPath, sheetName);
         }
 
         private static void CreateJsonReports()
@@ -30,17 +37,8 @@
 
         private static void CreateExcelReports()
         {
-            var excelController = new ExcelController("financial-report.xlsx");
+            var excelController = new ExcelExportController("financial-report.xlsx");
             excelController.ExportData();
-        }
-
-        private static List<Report> ExcelReportsImport()
-        {
-            string zipPath = @"..\..\..\SampleReports.zip";
-            string sheetName = "Sheet1$";
-            ExcelImportController excelImport = new ExcelImportController();
-            List<Report> reports = excelImport.GetReports(zipPath, sheetName);
-            return reports;
         }
     }
 }

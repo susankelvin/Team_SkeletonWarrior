@@ -1,37 +1,18 @@
 ﻿namespace MobileVendors.Controllers
 {
     using System;
+    using System.Linq;
     using System.IO;
     using System.IO.Compression;
     using System.Data.OleDb;
-    using System.Collections.Generic;
-
-    public class Report
-    {
-        public string Store { get; set; }
-        public DateTime Date { get; set; }
-        public int ServiceID { get; set; }
-        public int Quantity { get; set; }
-        public int PeriodInYears { get; set; }
-        public decimal MonthlyFee { get; set; }
-        public decimal Total { get; set; }
-
-        public Report(string store, DateTime date, int serviceID, int quantity, int periodInYears, decimal monthlyFee, decimal total)
-        {
-            this.Store = store;
-            this.Date = date;
-            this.ServiceID = serviceID;
-            this.Quantity = quantity;
-            this.PeriodInYears = periodInYears;
-            this.MonthlyFee = monthlyFee;
-            this.Total = total;
-        }
-    }
+    using MobileVendors.Models;
+    using MobileVendors.Data;
 
     public class ExcelImportController
     {
+        private readonly IMobileVendorsData data = new MobileVendorsData();
+
         private static string extractPath;
-        private static List<Report> reports = new List<Report>();
 
         private void GetExcelReports(string path, string sheetName, string extractPath)
         {
@@ -43,9 +24,10 @@
                 string fileName = fileInfo.Name;
                 DirectoryInfo dirInfo = fileInfo.Directory;
                 string dirName = dirInfo.Name;
+                
                 string connectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;" +
-                @"Data Source=" + extractPath + @"\" + dirName + @"\" + fileName +
-                @";Extended Properties=""Excel 12.0 XML;HDR=Yes""";
+                                          @"Data Source=" + extractPath + @"\" + dirName + @"\" + fileName +
+                                          @";Extended Properties=""Excel 12.0 XML;HDR=Yes""";
                 OleDbConnection dbConn = new OleDbConnection(connectionString);
                 dbConn.Open();
 
@@ -63,13 +45,25 @@
                             int quantity = Int32.Parse(reader["Quantity"].ToString());
                             int periodInYears = Int32.Parse(reader["Period (years)"].ToString());
                             decimal monthlyFee = Decimal.Parse(reader["Monthly Fee"].ToString());
-                            decimal total = Decimal.Parse(reader["Total"].ToString());
-                            DateTime date = DateTime.Parse(dirName);
-                            int length = fileName.Length - 4;
-                            string storeName = fileName.Substring(0, length);
+                            var day = dirName.Substring(0, 2);
+                            var month = dirName.Substring(3, 2);
+                            var dateAsString = string.Format("{0}.{1}.2014", month, day);
+                           
+                            DateTime date = date = DateTime.Parse(dateAsString);
 
-                            Report report = new Report(storeName, date, serviceId, (int)quantity, periodInYears, monthlyFee, total);
-                            reports.Add(report);
+                            var storeId = new Random().Next(1, 60);
+
+                            var report = new Subscription()
+                            {
+                                Quantity = quantity,
+                                PeriodInYears = periodInYears,
+                                TotalIncome = monthlyFee,
+                                ServiceId = serviceId,
+                                SubscribeDate = date,
+                                StoreId = storeId
+                            };
+                            data.Subscriptions.Add(report);
+                            data.SaveChanges();
                         }
                     }
                 }
@@ -82,14 +76,13 @@
             }
         }
 
-        public List<Report> GetReports(string zipPath, string sheetName)
+        public void GetReports(string zipPath, string sheetName)
         {
             string tempDirectory = Path.Combine(Path.GetTempPath(), Path.GetRandomFileName());
             Directory.CreateDirectory(tempDirectory);
             extractPath = tempDirectory;
             ZipFile.ExtractToDirectory(zipPath, tempDirectory);
             GetExcelReports(tempDirectory, sheetName, extractPath);
-            return reports;
         }
     }
 }

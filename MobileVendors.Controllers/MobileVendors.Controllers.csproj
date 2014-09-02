@@ -103,7 +103,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ExcelController.cs" />
+    <Compile Include="ExcelExportController.cs" />
     <Compile Include="ExcelImportController.cs" />
     <Compile Include="JsonReportController.cs" />
     <Compile Include="MongoDBController.cs" />
