@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DomainModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="2.0.0.0" name="ReportsModel" namespace="MySqlDataAccessModel" showPropertiesCompartment="true" xmlns="http://www.telerik.com/ORM">
+  <orm:orm name="ReportsModel" backend="mysql" xmlns:orm="http://tempuri.org/ORM">
+    <orm:namespace name="MySqlDataAccessModel" default="true">
+      <orm:class name="Report" uniqueId="40313499-6c1c-4e45-81e8-8018d7aca458">
+        <orm:table name="Reports" />
+        <orm:identity>
+          <orm:key-generator name="autoinc">
+            <orm:key-generator-member property-name="ReportID" />
+          </orm:key-generator>
+          <orm:single-field field-name="_reportID" />
+        </orm:identity>
+        <orm:concurrency strategy="changed" />
+        <orm:field name="_reportID" property="ReportID" behavior="readwrite" uniqueId="d9606598-9b57-4482-953b-7301b3507aa5" type="System.Int32">
+          <orm:column name="ReportID" sql-type="integer" nullable="false" length="0" scale="0" primary-key="true" backend-calculated="true" ado-type="Int32" />
+        </orm:field>
+        <orm:field name="_productID" property="ProductID" behavior="readwrite" uniqueId="b33c56a3-8a8b-4ba1-b65b-5be1e49b511d" type="System.Int32">
+          <orm:column name="ProductID" sql-type="integer" nullable="false" length="0" scale="0" ado-type="Int32" />
+        </orm:field>
+        <orm:field name="_productName" property="ProductName" behavior="readwrite" uniqueId="cf807b42-64cc-4d40-8bd6-9a0694228d2b" type="System.String">
+          <orm:column name="ProductName" sql-type="nvarchar" nullable="false" length="50" scale="0" ado-type="UnicodeStringVariableLength" />
+        </orm:field>
+        <orm:field name="_vendorName" property="VendorName" behavior="readwrite" uniqueId="b8b90798-2520-4388-a35f-86be59f5746b" type="System.String">
+          <orm:column name="VendorName" sql-type="nvarchar" nullable="false" length="50" scale="0" ado-type="UnicodeStringVariableLength" />
+        </orm:field>
+        <orm:field name="_totalQuantity" property="TotalQuantity" behavior="readwrite" uniqueId="ef0a33e6-0494-4bb7-ba3e-2a2f7e57e041" type="System.Int32">
+          <orm:column name="TotalQuantity" sql-type="integer" nullable="false" length="0" scale="0" ado-type="Int32" />
+        </orm:field>
+        <orm:field name="_totalIncomes" property="TotalIncomes" behavior="readwrite" uniqueId="ede6608c-861d-4854-98a9-f8acba2f3b85" type="System.Int64">
+          <orm:column name="TotalIncomes" sql-type="decimal" nullable="false" length="10" scale="0" ado-type="Decimal" />
+        </orm:field>
+        <orm:field name="_expenses" property="Expenses" behavior="readwrite" uniqueId="8f19622e-f8d2-4c2a-a968-dafcaff48e96" type="System.Nullable`1[[System.Int64, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="Expenses" sql-type="decimal" nullable="true" length="10" scale="0" has-default-value="true" ado-type="Decimal" />
+        </orm:field>
+      </orm:class>
+    </orm:namespace>
+    <orm:schema schema="">
+      <orm:table name="Reports">
+        <orm:column name="ReportID" sql-type="integer" nullable="false" length="0" scale="0" primary-key="true" backend-calculated="true" ado-type="Int32" />
+        <orm:column name="ProductID" sql-type="integer" nullable="false" length="0" scale="0" ado-type="Int32" />
+        <orm:column name="ProductName" sql-type="nvarchar" nullable="false" length="50" scale="0" ado-type="UnicodeStringVariableLength" />
+        <orm:column name="VendorName" sql-type="nvarchar" nullable="false" length="50" scale="0" ado-type="UnicodeStringVariableLength" />
+        <orm:column name="TotalQuantity" sql-type="integer" nullable="false" length="0" scale="0" ado-type="Int32" />
+        <orm:column name="TotalIncomes" sql-type="decimal" nullable="false" length="10" scale="0" ado-type="Decimal" />
+        <orm:column name="Expenses" sql-type="decimal" nullable="true" length="10" scale="0" has-default-value="true" ado-type="Decimal" />
+      </orm:table>
+    </orm:schema>
+    <orm:relational-naming-settings>
+      <orm:source-strategy>Property</orm:source-strategy>
+      <orm:remove-camel-case>False</orm:remove-camel-case>
+    </orm:relational-naming-settings>
+  </orm:orm>
+  <ModelSettings xmlns="">
+    <AppConfigConnectionPropertyName>MySql</AppConfigConnectionPropertyName>
+    <AppConfigConnectionString>server=localhost;database=MobileVendorsReports;uid=root;pwd=root</AppConfigConnectionString>
+    <NamingSettings>
+      <ClassRules>
+        <CaseMode>PascalCase</CaseMode>
+        <PluralizationMode>Singularize</PluralizationMode>
+      </ClassRules>
+      <FieldRules>
+        <AddPrefix>_</AddPrefix>
+        <CaseMode>CamelCase</CaseMode>
+      </FieldRules>
+      <PropertyRules>
+        <CaseMode>PascalCase</CaseMode>
+      </PropertyRules>
+      <NavigationPropertyRules />
+    </NamingSettings>
+    <CodeGenerationSettings>
+      <GenerateDataAnnotationAttributes>true</GenerateDataAnnotationAttributes>
+      <OutputProjectName>MySqlDataAccessModel</OutputProjectName>
+      <MappingDefinitionType>Xml</MappingDefinitionType>
+    </CodeGenerationSettings>
+    <SchemaUpdateSettings />
+    <BackendConfigurationSettings>
+      <BackendConfiguration>
+        <Backend>MySql</Backend>
+        <ProviderName>MySql.Data.MySqlClient</ProviderName>
+      </BackendConfiguration>
+    </BackendConfigurationSettings>
+  </ModelSettings>
+  <Types>
+    <DomainClass Id="40313499-6c1c-4e45-81e8-8018d7aca458" name="Report" namespace="MySqlDataAccessModel" showPropertiesCompartment="true" identityMechanism="DatabaseServerCalculated" concurrencyMode="Changed" showNavigationCompartment="true" showImplementationCompartment="true" identityMechanismMember="ReportID">
+      <Property Id="d9606598-9b57-4482-953b-7301b3507aa5" name="ReportID" type="Int32" label="ReportID : Int32" kind="Persistent" identity="true" fieldName="_reportID" />
+      <Property Id="b33c56a3-8a8b-4ba1-b65b-5be1e49b511d" name="ProductID" type="Int32" label="ProductID : Int32" kind="Persistent" fieldName="_productID" />
+      <Property Id="cf807b42-64cc-4d40-8bd6-9a0694228d2b" name="ProductName" label="ProductName : String" kind="Persistent" fieldName="_productName" />
+      <Property Id="ede6608c-861d-4854-98a9-f8acba2f3b85" name="TotalIncomes" type="Int64" label="TotalIncomes : Int64" kind="Persistent" fieldName="_totalIncomes" />
+      <Property Id="ef0a33e6-0494-4bb7-ba3e-2a2f7e57e041" name="TotalQuantity" type="Int32" label="TotalQuantity : Int32" kind="Persistent" fieldName="_totalQuantity" />
+      <Property Id="b8b90798-2520-4388-a35f-86be59f5746b" name="VendorName" label="VendorName : String" kind="Persistent" fieldName="_vendorName" />
+      <Property Id="8f19622e-f8d2-4c2a-a968-dafcaff48e96" name="Expenses" type="Int64" label="Expenses : Int64" nullable="true" kind="Persistent" fieldName="_expenses" />
+    </DomainClass>
+  </Types>
+  <domainContext>
+    <domainModelHasDomainContext Id="1c8d9d75-3652-44ec-8559-57397d068de0">
+      <domainContainer name="ReportsModel" namespace="MySqlDataAccessModel" showPropertiesCompartment="true">
+        <entitySetProperty name="Reports" namespace="MySqlDataAccessModel" type="Report" label="Reports : IQueryable&lt;MySqlDataAccessModel.Report&gt;" />
+      </domainContainer>
+    </domainModelHasDomainContext>
+  </domainContext>
+</DomainModel>
