@@ -136,10 +136,9 @@ C:\Users\ShOnZi\Desktop\TelerikAcademy\Databases\Homework\SkeletonWarriorTeam_Mo
 C:\Users\ShOnZi\Desktop\TelerikAcademy\Databases\Homework\SkeletonWarriorTeam_MobileVendors\MobileVendors.ConsoleClient\bin\Debug\de\MigraDoc.Rendering.resources.dll
 C:\Users\ShOnZi\Desktop\TelerikAcademy\Databases\Homework\SkeletonWarriorTeam_MobileVendors\MobileVendors.ConsoleClient\bin\Debug\de\PdfSharp.resources.dll
 C:\Users\ShOnZi\Desktop\TelerikAcademy\Databases\Homework\SkeletonWarriorTeam_MobileVendors\MobileVendors.ConsoleClient\bin\Debug\de\PdfSharp.Charting.resources.dll
-D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MobileVendors.ConsoleClient\obj\Debug\MobileVendors.ConsoleClient.csprojResolveAssemblyReference.cache
-D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MobileVendors.ConsoleClient\bin\Debug\MobileVendors.ConsoleClient.exe.config
 D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MobileVendors.ConsoleClient\bin\Debug\x64\SQLite.Interop.dll
 D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MobileVendors.ConsoleClient\bin\Debug\x86\SQLite.Interop.dll
+D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MobileVendors.ConsoleClient\bin\Debug\MobileVendors.ConsoleClient.exe.config
 D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MobileVendors.ConsoleClient\bin\Debug\MobileVendors.ConsoleClient.exe
 D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MobileVendors.ConsoleClient\bin\Debug\MobileVendors.ConsoleClient.pdb
 D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MobileVendors.ConsoleClient\bin\Debug\EntityFramework.dll
@@ -147,9 +146,14 @@ D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrio
 D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MobileVendors.ConsoleClient\bin\Debug\MobileVendors.Controllers.dll
 D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MobileVendors.ConsoleClient\bin\Debug\MobileVendors.Data.dll
 D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MobileVendors.ConsoleClient\bin\Debug\MobileVendors.Models.dll
+D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MobileVendors.ConsoleClient\bin\Debug\MySql.Data.dll
 D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MobileVendors.ConsoleClient\bin\Debug\System.Data.SQLite.dll
 D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MobileVendors.ConsoleClient\bin\Debug\System.Data.SQLite.EF6.dll
 D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MobileVendors.ConsoleClient\bin\Debug\System.Data.SQLite.Linq.dll
+D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MobileVendors.ConsoleClient\bin\Debug\Telerik.OpenAccess.35.Extensions.dll
+D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MobileVendors.ConsoleClient\bin\Debug\Telerik.OpenAccess.40.Extensions.dll
+D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MobileVendors.ConsoleClient\bin\Debug\Telerik.OpenAccess.dll
+D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MobileVendors.ConsoleClient\bin\Debug\Telerik.OpenAccess.Runtime.dll
 D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MobileVendors.ConsoleClient\bin\Debug\MongoDB.Driver.dll
 D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MobileVendors.ConsoleClient\bin\Debug\MigraDoc.DocumentObjectModel.dll
 D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MobileVendors.ConsoleClient\bin\Debug\Newtonsoft.Json.dll
@@ -163,6 +167,9 @@ D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrio
 D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MobileVendors.ConsoleClient\bin\Debug\EntityFramework.xml
 D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MobileVendors.ConsoleClient\bin\Debug\EntityFramework.SqlServer.xml
 D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MobileVendors.ConsoleClient\bin\Debug\System.Data.SQLite.xml
+D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MobileVendors.ConsoleClient\bin\Debug\Telerik.OpenAccess.xml
+D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MobileVendors.ConsoleClient\bin\Debug\Telerik.OpenAccess.35.Extensions.xml
+D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MobileVendors.ConsoleClient\bin\Debug\Telerik.OpenAccess.40.Extensions.xml
 D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MobileVendors.ConsoleClient\bin\Debug\MongoDB.Driver.xml
 D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MobileVendors.ConsoleClient\bin\Debug\MigraDoc.DocumentObjectModel.xml
 D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MobileVendors.ConsoleClient\bin\Debug\Newtonsoft.Json.xml
@@ -174,6 +181,6 @@ D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrio
 D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MobileVendors.ConsoleClient\bin\Debug\de\MigraDoc.Rendering.resources.dll
 D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MobileVendors.ConsoleClient\bin\Debug\de\PdfSharp.resources.dll
 D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MobileVendors.ConsoleClient\bin\Debug\de\PdfSharp.Charting.resources.dll
+D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MobileVendors.ConsoleClient\obj\Debug\MobileVendors.ConsoleClient.csprojResolveAssemblyReference.cache
 D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MobileVendors.ConsoleClient\obj\Debug\MobileVendors.ConsoleClient.exe
 D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MobileVendors.ConsoleClient\obj\Debug\MobileVendors.ConsoleClient.pdb
-D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MobileVendors.ConsoleClient\bin\Debug\MySql.Data.dll

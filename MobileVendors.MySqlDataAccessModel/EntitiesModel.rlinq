@@ -29,6 +29,9 @@
         <orm:field name="_totalIncomes" property="TotalIncomes" behavior="readwrite" uniqueId="ede6608c-861d-4854-98a9-f8acba2f3b85" type="System.Int64">
           <orm:column name="TotalIncomes" sql-type="decimal" nullable="false" length="10" scale="0" ado-type="Decimal" />
         </orm:field>
+        <orm:field name="_expenses" property="Expenses" behavior="readwrite" uniqueId="8f19622e-f8d2-4c2a-a968-dafcaff48e96" type="System.Nullable`1[[System.Int64, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="Expenses" sql-type="decimal" nullable="true" length="10" scale="0" has-default-value="true" ado-type="Decimal" />
+        </orm:field>
       </orm:class>
     </orm:namespace>
     <orm:schema schema="">
@@ -39,6 +42,7 @@
         <orm:column name="VendorName" sql-type="nvarchar" nullable="false" length="50" scale="0" ado-type="UnicodeStringVariableLength" />
         <orm:column name="TotalQuantity" sql-type="integer" nullable="false" length="0" scale="0" ado-type="Int32" />
         <orm:column name="TotalIncomes" sql-type="decimal" nullable="false" length="10" scale="0" ado-type="Decimal" />
+        <orm:column name="Expenses" sql-type="decimal" nullable="true" length="10" scale="0" has-default-value="true" ado-type="Decimal" />
       </orm:table>
     </orm:schema>
     <orm:relational-naming-settings>
@@ -48,7 +52,7 @@
   </orm:orm>
   <ModelSettings xmlns="">
     <AppConfigConnectionPropertyName>MySql</AppConfigConnectionPropertyName>
-    <AppConfigConnectionString>Server=localhost;Database=MobileVendorsReports;Uid=root;Pwd=root;</AppConfigConnectionString>
+    <AppConfigConnectionString>server=localhost;database=MobileVendorsReports;uid=root;pwd=root</AppConfigConnectionString>
     <NamingSettings>
       <ClassRules>
         <CaseMode>PascalCase</CaseMode>
@@ -84,6 +88,7 @@
       <Property Id="ede6608c-861d-4854-98a9-f8acba2f3b85" name="TotalIncomes" type="Int64" label="TotalIncomes : Int64" kind="Persistent" fieldName="_totalIncomes" />
       <Property Id="ef0a33e6-0494-4bb7-ba3e-2a2f7e57e041" name="TotalQuantity" type="Int32" label="TotalQuantity : Int32" kind="Persistent" fieldName="_totalQuantity" />
       <Property Id="b8b90798-2520-4388-a35f-86be59f5746b" name="VendorName" label="VendorName : String" kind="Persistent" fieldName="_vendorName" />
+      <Property Id="8f19622e-f8d2-4c2a-a968-dafcaff48e96" name="Expenses" type="Int64" label="Expenses : Int64" nullable="true" kind="Persistent" fieldName="_expenses" />
     </DomainClass>
   </Types>
   <domainContext>

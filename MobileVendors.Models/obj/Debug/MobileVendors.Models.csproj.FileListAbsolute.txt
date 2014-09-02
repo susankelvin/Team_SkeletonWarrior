@@ -65,6 +65,7 @@ D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrio
 D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MobileVendors.Models\bin\Debug\EntityFramework.SqlServer.dll
 D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MobileVendors.Models\bin\Debug\MongoDB.Bson.dll
 D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MobileVendors.Models\bin\Debug\MongoDB.Driver.dll
+D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MobileVendors.Models\bin\Debug\MySql.Data.dll
 D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MobileVendors.Models\bin\Debug\System.Data.SQLite.dll
 D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MobileVendors.Models\bin\Debug\System.Data.SQLite.EF6.dll
 D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MobileVendors.Models\bin\Debug\System.Data.SQLite.Linq.dll
@@ -73,7 +74,6 @@ D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrio
 D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MobileVendors.Models\bin\Debug\MongoDB.Bson.xml
 D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MobileVendors.Models\bin\Debug\MongoDB.Driver.xml
 D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MobileVendors.Models\bin\Debug\System.Data.SQLite.xml
+D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MobileVendors.Models\obj\Debug\MobileVendors.Models.csprojResolveAssemblyReference.cache
 D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MobileVendors.Models\obj\Debug\MobileVendors.Models.dll
 D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MobileVendors.Models\obj\Debug\MobileVendors.Models.pdb
-D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MobileVendors.Models\obj\Debug\MobileVendors.Models.csprojResolveAssemblyReference.cache
-D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MobileVendors.Models\bin\Debug\MySql.Data.dll

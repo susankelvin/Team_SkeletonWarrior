@@ -19,7 +19,7 @@ using Telerik.OpenAccess.Data.Common;
 using Telerik.OpenAccess.Metadata.Fluent;
 using Telerik.OpenAccess.Metadata.Fluent.Advanced;
 
-namespace MobileVendors.MySqlDataAccessModel	
+namespace MySqlDataAccessModel	
 {
 	public partial class Report
 	{
@@ -107,6 +107,19 @@ namespace MobileVendors.MySqlDataAccessModel
 			set
 			{
 				this._totalIncomes = value;
+			}
+		}
+		
+		private long? _expenses;
+		public virtual long? Expenses
+		{
+			get
+			{
+				return this._expenses;
+			}
+			set
+			{
+				this._expenses = value;
 			}
 		}
 		
