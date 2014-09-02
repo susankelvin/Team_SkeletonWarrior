@@ -184,3 +184,5 @@ D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrio
 D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MobileVendors.ConsoleClient\obj\Debug\MobileVendors.ConsoleClient.csprojResolveAssemblyReference.cache
 D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MobileVendors.ConsoleClient\obj\Debug\MobileVendors.ConsoleClient.exe
 D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MobileVendors.ConsoleClient\obj\Debug\MobileVendors.ConsoleClient.pdb
+D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MobileVendors.ConsoleClient\bin\Debug\MobileVendors.MySqlDataAccessModel.dll
+D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MobileVendors.ConsoleClient\bin\Debug\MobileVendors.MySqlDataAccessModel.pdb

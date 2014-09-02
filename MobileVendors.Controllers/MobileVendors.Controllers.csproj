@@ -105,6 +105,7 @@
     <Compile Include="JsonReportController.cs" />
     <Compile Include="MongoDBController.cs" />
     <Compile Include="MongoToSqlController.cs" />
+    <Compile Include="MySqlController.cs" />
     <Compile Include="PdfReportController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SQLController.cs" />
@@ -121,6 +122,10 @@
     <ProjectReference Include="..\MobileVendors.Models\MobileVendors.Models.csproj">
       <Project>{6c4d5355-2ad2-4d69-bfd9-b84ddba89695}</Project>
       <Name>MobileVendors.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MobileVendors.MySqlDataAccessModel\MobileVendors.MySqlDataAccessModel.csproj">
+      <Project>{c50145e6-a244-4f1f-b41f-90d1925b4a00}</Project>
+      <Name>MobileVendors.MySqlDataAccessModel</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
