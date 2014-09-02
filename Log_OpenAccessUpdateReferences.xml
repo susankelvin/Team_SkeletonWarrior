@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="_ConvertModelWizard_Files\UpgradeReferences.xslt"?>
+<UpgradeLog>
+  <Events>
+    <Event EventType="Success" Action="Analyze" SourceItem="D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MobileVendors.ConsoleClient\MobileVendors.ConsoleClient.csproj" Message="Assembly References" />
+    <Event EventType="Success" Action="Analyze" SourceItem="D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MobileVendors.ConsoleClient\MobileVendors.ConsoleClient.csproj" Message="Project References" />
+    <Event EventType="Success" Action="Analyze" SourceItem="D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MobileVendors.ConsoleClient\MobileVendors.ConsoleClient.csproj" Message="Import Directives" />
+    <Event EventType="Success" Action="Analyze" SourceItem="D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MobileVendors.ConsoleClient\App.config" Message="Assembly References" />
+    <Event EventType="Success" Action="Analyze" SourceItem="D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MobileVendors.ConsoleClient\App.config" Message="Http Handlers" />
+    <Event EventType="Success" Action="Analyze" SourceItem="D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MobileVendors.ConsoleClient\App.config" Message="Handlers (IIS7+)" />
+    <Event EventType="Success" Action="Analyze" SourceItem="D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MobileVendors.ConsoleClient\App.config" Message="Config Sections" />
+    <Event EventType="Success" Action="Analyze" SourceItem="D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MobileVendors.ConsoleClient\App.config" Message="Render Extensions" />
+    <Event EventType="Success" Action="Analyze" SourceItem="D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MobileVendors.ConsoleClient\App.config" Message="App.config" />
+    <Event EventType="Success" Action="Analyze" SourceItem="D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MobileVendors.ConsoleClient\packages.config" Message="Assembly References" />
+    <Event EventType="Success" Action="Analyze" SourceItem="D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MobileVendors.ConsoleClient\packages.config" Message="Http Handlers" />
+    <Event EventType="Success" Action="Analyze" SourceItem="D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MobileVendors.ConsoleClient\packages.config" Message="Handlers (IIS7+)" />
+    <Event EventType="Success" Action="Analyze" SourceItem="D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MobileVendors.ConsoleClient\packages.config" Message="Config Sections" />
+    <Event EventType="Success" Action="Analyze" SourceItem="D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MobileVendors.ConsoleClient\packages.config" Message="Render Extensions" />
+    <Event EventType="Success" Action="Analyze" SourceItem="D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MobileVendors.ConsoleClient\packages.config" Message="packages.config" />
+    <Event EventType="Success" Action="Analyze" SourceItem="D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MobileVendors.ConsoleClient\MobileVendors.ConsoleClient.csproj" Message="MobileVendors.ConsoleClient" />
+    <Event EventType="Success" Action="Analyze" SourceItem="D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MobileVendors.Data\MobileVendors.Data.csproj" Message="Assembly References" />
+    <Event EventType="Success" Action="Analyze" SourceItem="D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MobileVendors.Data\MobileVendors.Data.csproj" Message="Project References" />
+    <Event EventType="Success" Action="Analyze" SourceItem="D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MobileVendors.Data\MobileVendors.Data.csproj" Message="Import Directives" />
+    <Event EventType="Success" Action="Analyze" SourceItem="D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MobileVendors.Data\App.config" Message="Assembly References" />
+    <Event EventType="Success" Action="Analyze" SourceItem="D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MobileVendors.Data\App.config" Message="Http Handlers" />
+    <Event EventType="Success" Action="Analyze" SourceItem="D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MobileVendors.Data\App.config" Message="Handlers (IIS7+)" />
+    <Event EventType="Success" Action="Analyze" SourceItem="D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MobileVendors.Data\App.config" Message="Config Sections" />
+    <Event EventType="Success" Action="Analyze" SourceItem="D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MobileVendors.Data\App.config" Message="Render Extensions" />
+    <Event EventType="Success" Action="Analyze" SourceItem="D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MobileVendors.Data\App.config" Message="App.config" />
+    <Event EventType="Success" Action="Analyze" SourceItem="D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MobileVendors.Data\packages.config" Message="Assembly References" />
+    <Event EventType="Success" Action="Analyze" SourceItem="D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MobileVendors.Data\packages.config" Message="Http Handlers" />
+    <Event EventType="Success" Action="Analyze" SourceItem="D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MobileVendors.Data\packages.config" Message="Handlers (IIS7+)" />
+    <Event EventType="Success" Action="Analyze" SourceItem="D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MobileVendors.Data\packages.config" Message="Config Sections" />
+    <Event EventType="Success" Action="Analyze" SourceItem="D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MobileVendors.Data\packages.config" Message="Render Extensions" />
+    <Event EventType="Success" Action="Analyze" SourceItem="D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MobileVendors.Data\packages.config" Message="packages.config" />
+    <Event EventType="Success" Action="Analyze" SourceItem="D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MobileVendors.Data\MobileVendors.Data.csproj" Message="MobileVendors.Data" />
+    <Event EventType="Success" Action="Analyze" SourceItem="D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MobileVendors.Models\MobileVendors.Models.csproj" Message="Assembly References" />
+    <Event EventType="Success" Action="Analyze" SourceItem="D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MobileVendors.Models\MobileVendors.Models.csproj" Message="Project References" />
+    <Event EventType="Success" Action="Analyze" SourceItem="D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MobileVendors.Models\MobileVendors.Models.csproj" Message="Import Directives" />
+    <Event EventType="Success" Action="Analyze" SourceItem="D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MobileVendors.Models\packages.config" Message="Assembly References" />
+    <Event EventType="Success" Action="Analyze" SourceItem="D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MobileVendors.Models\packages.config" Message="Http Handlers" />
+    <Event EventType="Success" Action="Analyze" SourceItem="D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MobileVendors.Models\packages.config" Message="Handlers (IIS7+)" />
+    <Event EventType="Success" Action="Analyze" SourceItem="D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MobileVendors.Models\packages.config" Message="Config Sections" />
+    <Event EventType="Success" Action="Analyze" SourceItem="D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MobileVendors.Models\packages.config" Message="Render Extensions" />
+    <Event EventType="Success" Action="Analyze" SourceItem="D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MobileVendors.Models\packages.config" Message="packages.config" />
+    <Event EventType="Success" Action="Analyze" SourceItem="D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MobileVendors.Models\MobileVendors.Models.csproj" Message="MobileVendors.Models" />
+    <Event EventType="Success" Action="Analyze" SourceItem="D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MobileVendors.Controllers\MobileVendors.Controllers.csproj" Message="Assembly References" />
+    <Event EventType="Success" Action="Analyze" SourceItem="D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MobileVendors.Controllers\MobileVendors.Controllers.csproj" Message="Project References" />
+    <Event EventType="Success" Action="Analyze" SourceItem="D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MobileVendors.Controllers\MobileVendors.Controllers.csproj" Message="Import Directives" />
+    <Event EventType="Success" Action="Analyze" SourceItem="D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MobileVendors.Controllers\App.config" Message="Assembly References" />
+    <Event EventType="Success" Action="Analyze" SourceItem="D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MobileVendors.Controllers\App.config" Message="Http Handlers" />
+    <Event EventType="Success" Action="Analyze" SourceItem="D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MobileVendors.Controllers\App.config" Message="Handlers (IIS7+)" />
+    <Event EventType="Success" Action="Analyze" SourceItem="D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MobileVendors.Controllers\App.config" Message="Config Sections" />
+    <Event EventType="Success" Action="Analyze" SourceItem="D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MobileVendors.Controllers\App.config" Message="Render Extensions" />
+    <Event EventType="Success" Action="Analyze" SourceItem="D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MobileVendors.Controllers\App.config" Message="App.config" />
+    <Event EventType="Success" Action="Analyze" SourceItem="D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MobileVendors.Controllers\packages.config" Message="Assembly References" />
+    <Event EventType="Success" Action="Analyze" SourceItem="D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MobileVendors.Controllers\packages.config" Message="Http Handlers" />
+    <Event EventType="Success" Action="Analyze" SourceItem="D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MobileVendors.Controllers\packages.config" Message="Handlers (IIS7+)" />
+    <Event EventType="Success" Action="Analyze" SourceItem="D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MobileVendors.Controllers\packages.config" Message="Config Sections" />
+    <Event EventType="Success" Action="Analyze" SourceItem="D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MobileVendors.Controllers\packages.config" Message="Render Extensions" />
+    <Event EventType="Success" Action="Analyze" SourceItem="D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MobileVendors.Controllers\packages.config" Message="packages.config" />
+    <Event EventType="Success" Action="Analyze" SourceItem="D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MobileVendors.Controllers\MobileVendors.Controllers.csproj" Message="MobileVendors.Controllers" />
+    <Event EventType="Success" Action="Analyze" SourceItem="D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MySqlDataAccessModel\MySqlDataAccessModel.csproj" Message="Assembly References" />
+    <Event EventType="Success" Action="Analyze" SourceItem="D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MySqlDataAccessModel\MySqlDataAccessModel.csproj" Message="Project References" />
+    <Event EventType="Success" Action="Analyze" SourceItem="D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MySqlDataAccessModel\MySqlDataAccessModel.csproj" Message="Import Directives" />
+    <Event EventType="Success" Action="Analyze" SourceItem="D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MySqlDataAccessModel\app.config" Message="Assembly References" />
+    <Event EventType="Success" Action="Analyze" SourceItem="D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MySqlDataAccessModel\app.config" Message="Http Handlers" />
+    <Event EventType="Success" Action="Analyze" SourceItem="D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MySqlDataAccessModel\app.config" Message="Handlers (IIS7+)" />
+    <Event EventType="Success" Action="Analyze" SourceItem="D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MySqlDataAccessModel\app.config" Message="Config Sections" />
+    <Event EventType="Success" Action="Analyze" SourceItem="D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MySqlDataAccessModel\app.config" Message="Render Extensions" />
+    <Event EventType="Success" Action="Analyze" SourceItem="D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MySqlDataAccessModel\app.config" Message="app.config" />
+    <Event EventType="Success" Action="Analyze" SourceItem="D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MySqlDataAccessModel\packages.config" Message="Assembly References" />
+    <Event EventType="Success" Action="Analyze" SourceItem="D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MySqlDataAccessModel\packages.config" Message="Http Handlers" />
+    <Event EventType="Success" Action="Analyze" SourceItem="D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MySqlDataAccessModel\packages.config" Message="Handlers (IIS7+)" />
+    <Event EventType="Success" Action="Analyze" SourceItem="D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MySqlDataAccessModel\packages.config" Message="Config Sections" />
+    <Event EventType="Success" Action="Analyze" SourceItem="D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MySqlDataAccessModel\packages.config" Message="Render Extensions" />
+    <Event EventType="Success" Action="Analyze" SourceItem="D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MySqlDataAccessModel\packages.config" Message="packages.config" />
+    <Event EventType="Success" Action="Analyze" SourceItem="D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MySqlDataAccessModel\MySqlDataAccessModel.csproj" Message="MySqlDataAccessModel" />
+    <Event EventType="Success" Action="Analyze" SourceItem="D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MobileVendors.sln" Message="MobileVendors" />
+  </Events>
+</UpgradeLog>
