@@ -1,7 +1,6 @@
 ﻿namespace MobileVendors.ConsoleClient
 {
     using System;
-    using System.Linq;
 
     using MobileVendors.Controllers;
     using MobileVendors.Data;
@@ -10,9 +9,15 @@
     {
         private static void Main()
         {
-            //CreateJsonReports();
             //MongoToSqlExport();
-            ExportFromSQLite();
+            CreateJsonReports();
+            CreateExcelReports();
+        }
+
+        private static void MongoToSqlExport()
+        {
+            MongoToSqlController exporter = new MongoToSqlController();
+            exporter.ExportData();
         }
 
         private static void CreateJsonReports()
@@ -22,26 +27,10 @@
             jrc.CreateReport();
         }
 
-        private static void MongoToSqlExport()
+        private static void CreateExcelReports()
         {
-            MongoToSqlController exporter = new MongoToSqlController();
-
-            exporter.ExportVendors();
-            exporter.ExportTowns();
-            exporter.ExportCategories();
-            exporter.ExportStore();
-            exporter.ExportServices();
-        }
-
-        private static void ExportFromSQLite()
-        {
-            var sqliteController = new TaxesData();
-            var taxes = sqliteController.Taxes.All();
-            foreach (var tax in taxes)
-            {
-                Console.WriteLine("Service name: {0} | Service tax: {1}",
-                    tax.ServiceName, tax.Tax);
-            }
+            var excelController = new ExcelController("financial-report.xlsx");
+            excelController.ExportData();
         }
     }
 }

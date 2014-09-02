@@ -1,8 +1,9 @@
 ﻿namespace MobileVendors.Data
 {
-    using MobileVendors.Models;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
+
+    using MobileVendors.Models;
 
     public interface IMobileVendorsDbContext
     {

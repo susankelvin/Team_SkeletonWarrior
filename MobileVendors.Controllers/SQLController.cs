@@ -3,6 +3,7 @@
     using System;
     using System.Collections.Generic;
     using System.Linq;
+
     using MobileVendors.Data;
     using MobileVendors.Models;
     using MobileVendors.Models.MongoDBModels;
@@ -16,7 +17,7 @@
             this.data = new MobileVendorsData();
         }
 
-        public void PopullateVendors(ICollection<MongoDBVendor> vendors)
+        public void PopulateVendors(ICollection<MongoDBVendor> vendors)
         {
             foreach (var vendor in vendors)
             {
@@ -31,7 +32,7 @@
             this.data.SaveChanges();
         }
 
-        public void PopullateTowns(ICollection<MongoDBTown> towns)
+        public void PopulateVendors(ICollection<MongoDBTown> towns)
         {
             foreach (var town in towns)
             {
@@ -45,7 +46,7 @@
             this.data.SaveChanges();
         }
 
-        public void PopullateCategories(ICollection<MongoDBCategory> categories)
+        public void PopulateVendors(ICollection<MongoDBCategory> categories)
         {
             foreach (var category in categories)
             {
@@ -59,7 +60,7 @@
             this.data.SaveChanges();
         }
 
-        public void PopullateStores(ICollection<MongoDBStore> stores)
+        public void PopulateVendors(ICollection<MongoDBStore> stores)
         {
             foreach (var store in stores)
             {
@@ -77,7 +78,7 @@
             this.data.SaveChanges();
         }
 
-        public void PopullateServices(ICollection<MongoDBService> services)
+        public void PopulateVendors(ICollection<MongoDBService> services)
         {
             foreach (var service in services)
             {
@@ -95,7 +96,7 @@
             this.data.SaveChanges();
         }
 
-        public void PopullateSubsrciptions(int quantity, DateTime subscribeDate, int periodInYears, decimal totalIncome, int serviceId, int storeId)
+        public void PopulateVendors(int quantity, DateTime subscribeDate, int periodInYears, decimal totalIncome, int serviceId, int storeId)
         {
             this.data.Subscriptions.Add(new Subscription() { Quantity = quantity, SubscribeDate = subscribeDate, PeriodInYears = periodInYears, TotalIncome = totalIncome, ServiceId = serviceId, StoreId = storeId });
             this.data.SaveChanges();

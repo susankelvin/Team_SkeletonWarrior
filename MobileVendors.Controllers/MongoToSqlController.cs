@@ -3,6 +3,7 @@
     using System;
     using System.Collections.Generic;
     using System.Linq;
+
     using MobileVendors.Models.MongoDBModels;
 
     public class MongoToSqlController
@@ -17,34 +18,43 @@
             this.sqlController = new SQLController();
         }
 
-        public void ExportVendors()
+        public void ExportData()
+        {
+            this.ExportVendors();
+            this.ExportTowns();
+            this.ExportCategories();
+            this.ExportStore();
+            this.ExportServices();
+        }
+
+        private void ExportVendors()
         {
             ICollection<MongoDBVendor> vendorsFromMongo = this.mongoController.GetDistinctVendors();
-            this.sqlController.PopullateVendors(vendorsFromMongo);
+            this.sqlController.PopulateVendors(vendorsFromMongo);
         }
 
-        public void ExportTowns()
+        private void ExportTowns()
         {
             ICollection<MongoDBTown> townsFromMongo = this.mongoController.GetDistinctTowns();
-            this.sqlController.PopullateTowns(townsFromMongo);
+            this.sqlController.PopulateVendors(townsFromMongo);
         }
 
-        public void ExportCategories()
+        private void ExportCategories()
         {
             ICollection<MongoDBCategory> categoriesFromMongo = this.mongoController.GetDistinctCategories();
-            this.sqlController.PopullateCategories(categoriesFromMongo);
+            this.sqlController.PopulateVendors(categoriesFromMongo);
         }
 
-        public void ExportStore()
+        private void ExportStore()
         {
             ICollection<MongoDBStore> storesFromMongo = this.mongoController.GetStores();
-            this.sqlController.PopullateStores(storesFromMongo);
+            this.sqlController.PopulateVendors(storesFromMongo);
         }
 
-        public void ExportServices()
+        private void ExportServices()
         {
             ICollection<MongoDBService> servicesFromMongo = this.mongoController.GetServices();
-            this.sqlController.PopullateServices(servicesFromMongo);
+            this.sqlController.PopulateVendors(servicesFromMongo);
         }
     }
 }

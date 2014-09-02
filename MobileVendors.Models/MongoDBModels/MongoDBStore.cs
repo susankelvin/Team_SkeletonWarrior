@@ -1,6 +1,5 @@
 ﻿namespace MobileVendors.Models.MongoDBModels
 {
-    using MobileVendors.Models.MongoDBModels;
     using MongoDB.Bson;
 
     public class MongoDBStore

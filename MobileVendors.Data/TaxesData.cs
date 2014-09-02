@@ -1,13 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using MobileVendors.Data.Repositories;
-using MobileVendors.Models;
-
-namespace MobileVendors.Data
+﻿namespace MobileVendors.Data
 {
+    using System;
+    using System.Linq;
+
+    using MobileVendors.Data.Repositories;
+    using MobileVendors.Models;
+
     public class TaxesData
     {
         private readonly TaxesContext context;
@@ -21,7 +19,7 @@ namespace MobileVendors.Data
         {
             get
             {
-                return new GenericRepository<ServiceTax>(context);
+                return new GenericRepository<ServiceTax>(this.context);
             }
         }
 
@@ -29,6 +27,5 @@ namespace MobileVendors.Data
         {
             this.context.SaveChanges();
         }
-        
     }
 }

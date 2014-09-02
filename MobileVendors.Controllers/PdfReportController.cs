@@ -1,4 +1,4 @@
-﻿namespace MobileVendors.ConsoleClient
+﻿namespace MobileVendors.Controllers
 {
     using System;
     using System.Linq;
@@ -9,18 +9,18 @@
 
     using MobileVendors.Data;
 
-    public class PdfReportGenerator
+    public class PdfReportController
     {
         private readonly IMobileVendorsData data;
         private Document document;
         private Table table;
 
-        public PdfReportGenerator()
+        public PdfReportController()
             : this(new MobileVendorsData())
         {
         }
 
-        public PdfReportGenerator(IMobileVendorsData data)
+        public PdfReportController(IMobileVendorsData data)
         {
             this.data = data;
         }

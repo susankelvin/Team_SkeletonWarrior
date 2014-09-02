@@ -1,6 +1,7 @@
 ﻿namespace MobileVendors.Data
 {
     using System.Data.Entity;
+
     using MobileVendors.Data.Migrations;
     using MobileVendors.Models;
 

@@ -3,6 +3,7 @@
     using System;
     using System.Data.Entity;
     using System.Data.Entity.ModelConfiguration.Conventions;
+
     using MobileVendors.Models;
 
     public class TaxesContext : DbContext
