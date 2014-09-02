@@ -89,3 +89,9 @@ D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrio
 D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MobileVendors.Data\obj\Debug\MobileVendors.Data.csprojResolveAssemblyReference.cache
 D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MobileVendors.Data\obj\Debug\MobileVendors.Data.dll
 D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MobileVendors.Data\obj\Debug\MobileVendors.Data.pdb
+C:\Users\plt3ch\Documents\GitHub\Team_SkeletonWarrior\MobileVendors.Data\bin\Debug\System.Data.SQLite.dll
+C:\Users\plt3ch\Documents\GitHub\Team_SkeletonWarrior\MobileVendors.Data\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\plt3ch\Documents\GitHub\Team_SkeletonWarrior\MobileVendors.Data\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\plt3ch\Documents\GitHub\Team_SkeletonWarrior\MobileVendors.Data\bin\Debug\MongoDB.Bson.dll
+C:\Users\plt3ch\Documents\GitHub\Team_SkeletonWarrior\MobileVendors.Data\bin\Debug\System.Data.SQLite.xml
+C:\Users\plt3ch\Documents\GitHub\Team_SkeletonWarrior\MobileVendors.Data\bin\Debug\MongoDB.Bson.xml

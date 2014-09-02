@@ -7,6 +7,7 @@
     using MobileVendors.Data;
     using MobileVendors.Models;
     using MobileVendors.Models.MongoDBModels;
+    using System.Globalization;
 
     internal class SQLController
     {
@@ -96,11 +97,35 @@
             this.data.SaveChanges();
         }
 
-        public void PopulateVendors(int quantity, DateTime subscribeDate, int periodInYears, decimal totalIncome, int serviceId, int storeId)
+        public List<ServicesReport> GetTotalIncomeByDate()
         {
-            this.data.Subscriptions.Add(new Subscription() { Quantity = quantity, SubscribeDate = subscribeDate, PeriodInYears = periodInYears, TotalIncome = totalIncome, ServiceId = serviceId, StoreId = storeId });
-            this.data.SaveChanges();
-        }
+            var subsciptions = from sb in this.data.Subscriptions.All()
+                              join s in this.data.Services.All()
+                              on sb.ServiceId equals s.Id
+                              group sb by new {s.ServiceName, sb.SubscribeDate} into sbs
+                              select new
+                              {
+                                  Date = sbs.Key.SubscribeDate,
+                                  TotalSum = sbs.Sum(x=>x.TotalIncome*x.Quantity*x.PeriodInYears),
+                                  Name = sbs.Key.ServiceName
+                              };
+
+            List<ServicesReport> servicesReports = new List<ServicesReport>();
+
+            foreach (var subsciption in subsciptions)
+            {
+                ServicesReport servicesReport = new ServicesReport();
+
+                servicesReport.ServiceName = subsciption.Name;
+                servicesReport.Date = subsciption.Date;
+                servicesReport.TotalSum = subsciption.TotalSum;
+
+                servicesReports.Add(servicesReport);
+            }
+
+            return servicesReports;
+        } 
+
 
         private int FidTownIdByStore(MongoDBStore store)
         {

@@ -8,10 +8,11 @@
     {
         private static void Main()
         {
-            //MongoToSqlExport();
-            //ExcelReportsImportToSql();
-            CreateJsonReports();
-            CreateExcelReports();
+            MongoToSqlExport();
+            ExcelReportsImportToSql();
+            //CreateJsonReports();
+            //CreateExcelReports();
+            CreateXmlReports();
         }
 
         private static void MongoToSqlExport()
@@ -39,6 +40,12 @@
         {
             var excelController = new ExcelExportController("financial-report.xlsx");
             excelController.ExportData();
+        }
+
+        private static void CreateXmlReports()
+        {
+            XmlController xmlController = new XmlController();
+            xmlController.ExportXmlReport();
         }
     }
 }

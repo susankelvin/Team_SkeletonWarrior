@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<sales>
+	<sale service="Classic M">
+		<summary date="2014-08-30" total-sum="75.40" />
+	</sale>
+	<sale service="Classic M">
+		<summary date="2014-08-31" total-sum="55.90" />
+	</sale>
+	<sale service="Classic M">
+		<summary date="2014-09-01" total-sum="82.10" />
+	</sale>
+	<sale service="Classic M">
+		<summary date="2014-09-02" total-sum="174.90" />
+	</sale>
+	<sale service="Classic M">
+		<summary date="2014-09-03" total-sum="193.80" />
+	</sale>
+	<sale service="Classic S">
+		<summary date="2014-08-30" total-sum="165.00" />
+	</sale>
+	<sale service="Classic S">
+		<summary date="2014-08-31" total-sum="93.70" />
+	</sale>
+	<sale service="Classic S">
+		<summary date="2014-09-01" total-sum="100.00" />
+	</sale>
+	<sale service="Classic S">
+		<summary date="2014-09-02" total-sum="102.30" />
+	</sale>
+	<sale service="Classic S">
+		<summary date="2014-09-03" total-sum="116.60" />
+	</sale>
+	<sale service="Classic XS">
+		<summary date="2014-08-30" total-sum="115.00" />
+	</sale>
+	<sale service="Classic XS">
+		<summary date="2014-08-31" total-sum="139.00" />
+	</sale>
+	<sale service="Classic XS">
+		<summary date="2014-09-01" total-sum="132.70" />
+	</sale>
+	<sale service="Classic XS">
+		<summary date="2014-09-02" total-sum="238.50" />
+	</sale>
+	<sale service="Classic XS">
+		<summary date="2014-09-03" total-sum="129.10" />
+	</sale>
+</sales>
