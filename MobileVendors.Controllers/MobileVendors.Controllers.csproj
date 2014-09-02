@@ -76,6 +76,8 @@
       <HintPath>..\packages\System.Data.SQLite.Linq.1.0.93.0\lib\net45\System.Data.SQLite.Linq.dll</HintPath>
     </Reference>
     <Reference Include="System.Drawing" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.IO.Compression.FileSystem" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -84,6 +86,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ExcelController.cs" />
+    <Compile Include="ExcelImportController.cs" />
     <Compile Include="JsonReportController.cs" />
     <Compile Include="MongoDBController.cs" />
     <Compile Include="MongoToSqlController.cs" />

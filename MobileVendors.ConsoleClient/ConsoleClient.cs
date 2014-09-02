@@ -1,6 +1,7 @@
 ﻿namespace MobileVendors.ConsoleClient
 {
     using System;
+    using System.Collections.Generic;
 
     using MobileVendors.Controllers;
     using MobileVendors.Data;
@@ -31,6 +32,15 @@
         {
             var excelController = new ExcelController("financial-report.xlsx");
             excelController.ExportData();
+        }
+
+        private static List<Report> ExcelReportsImport()
+        {
+            string zipPath = @"..\..\..\SampleReports.zip";
+            string sheetName = "Sheet1$";
+            ExcelImportController excelImport = new ExcelImportController();
+            List<Report> reports = excelImport.GetReports(zipPath, sheetName);
+            return reports;
         }
     }
 }
