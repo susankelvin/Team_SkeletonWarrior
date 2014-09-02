@@ -18,9 +18,9 @@ using Telerik.OpenAccess.Metadata;
 using Telerik.OpenAccess.Data.Common;
 using Telerik.OpenAccess.Metadata.Fluent;
 using Telerik.OpenAccess.Metadata.Fluent.Advanced;
-using MySqlDataAccessModel;
+using MobileVendors.MySqlDataAccessModel;
 
-namespace MySqlDataAccessModel	
+namespace MobileVendors.MySqlDataAccessModel	
 {
 	public partial class ReportsModel : OpenAccessContext, IReportsModelUnitOfWork
 	{

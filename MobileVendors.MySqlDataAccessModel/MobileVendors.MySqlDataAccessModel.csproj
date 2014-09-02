@@ -8,8 +8,8 @@
     <ProjectGuid>{C50145E6-A244-4F1F-B41F-90D1925B4A00}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MySqlDataAccessModel</RootNamespace>
-    <AssemblyName>MySqlDataAccessModel</AssemblyName>
+    <RootNamespace>MobileVendors.MySqlDataAccessModel</RootNamespace>
+    <AssemblyName>MobileVendors.MySqlDataAccessModel</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>

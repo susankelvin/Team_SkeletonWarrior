@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.30723.0
+VisualStudioVersion = 12.0.30501.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{D74E2C4E-05C2-4A52-928B-23295FD5F3FB}"
 	ProjectSection(SolutionItems) = preProject
@@ -18,7 +18,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MobileVendors.Models", "Mob
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MobileVendors.Controllers", "MobileVendors.Controllers\MobileVendors.Controllers.csproj", "{458E00C4-85D0-44DB-9A96-9B65D6EA67B5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MySqlDataAccessModel", "MySqlDataAccessModel\MySqlDataAccessModel.csproj", "{C50145E6-A244-4F1F-B41F-90D1925B4A00}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MobileVendors.MySqlDataAccessModel", "MobileVendors.MySqlDataAccessModel\MobileVendors.MySqlDataAccessModel.csproj", "{C50145E6-A244-4F1F-B41F-90D1925B4A00}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
