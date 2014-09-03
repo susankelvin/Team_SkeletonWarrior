@@ -11,12 +11,12 @@
     {
         private readonly IMobileVendorsData data;
 
-        public SQLController()
+        internal SQLController()
         {
             this.data = new MobileVendorsData();
         }
 
-        public void PopulateVendors(ICollection<MongoDBVendor> vendors)
+        internal void PopulateVendors(ICollection<MongoDBVendor> vendors)
         {
             var xmlController = new XmlController();
 
@@ -48,7 +48,7 @@
             this.data.SaveChanges();
         }
 
-        public void PopulateTowns(ICollection<MongoDBTown> towns)
+        internal void PopulateTowns(ICollection<MongoDBTown> towns)
         {
             foreach (var town in towns)
             {
@@ -62,7 +62,7 @@
             this.data.SaveChanges();
         }
 
-        public void PopulateCategories(ICollection<MongoDBCategory> categories)
+        internal void PopulateCategories(ICollection<MongoDBCategory> categories)
         {
             foreach (var category in categories)
             {
@@ -76,7 +76,7 @@
             this.data.SaveChanges();
         }
 
-        public void PopulateStores(ICollection<MongoDBStore> stores)
+        internal void PopulateStores(ICollection<MongoDBStore> stores)
         {
             foreach (var store in stores)
             {
@@ -94,7 +94,7 @@
             this.data.SaveChanges();
         }
 
-        public void PopulateServices(ICollection<MongoDBService> services)
+        internal void PopulateServices(ICollection<MongoDBService> services)
         {
             foreach (var service in services)
             {
@@ -112,7 +112,7 @@
             this.data.SaveChanges();
         }
 
-        public List<ServicesReport> GetTotalIncomeByDate()
+        internal List<ServicesReport> GetTotalIncomeByDate()
         {
             var subsciptions = from sb in this.data.Subscriptions.All()
                                join s in this.data.Services.All() on sb.ServiceId equals s.Id

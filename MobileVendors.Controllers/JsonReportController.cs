@@ -22,7 +22,7 @@
             this.data = data;
         }
 
-        public void CreateReport()
+        public void CreateReports()
         { 
            var subscriptions = this.data.Subscriptions.All()
                                     .Select(s => new

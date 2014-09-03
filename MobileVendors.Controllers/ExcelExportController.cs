@@ -16,7 +16,7 @@
             this.connection = new OleDbConnection(connectionString);
         }
 
-        public void ExportData()
+        public void GenerateReport()
         {
             this.CreateTable();
             this.InsertData();
@@ -44,17 +44,23 @@
             var sqliteController = new TaxesData();
             var mySqlController = new MySqlController();
             var reports = mySqlController.GetReports();
+            var groupedReportsByVendor = reports.GroupBy(v => v.VendorName);
+
             var pairs = new KeyValuePair<string, object>[5];
 
-            foreach (var report in reports)
+            foreach (var report in groupedReportsByVendor)
             {
-                var tax = sqliteController.Taxes.All().First(t => t.ServiceName == report.ProductName).Tax;
+                var vendorName = report.Key;
+                var totalIncome = reports.Where(r => r.VendorName == vendorName).Sum(inc => inc.TotalIncomes);
+                var tax = sqliteController.Taxes.All().Where(t => t.ServiceName == vendorName); 
+                var taxes = tax.Sum(t => t.Tax) / tax.Count();
+                var expenses = reports.First(r => r.VendorName == vendorName).Expenses;
                 
-                pairs[0] = new KeyValuePair<string, object>("ServiceName",report.ProductName);
-                pairs[3] = new KeyValuePair<string, object>("Incomes",report.TotalIncomes);
-                pairs[2] = new KeyValuePair<string, object>("Expenses",report.Expenses);
-                pairs[1] = new KeyValuePair<string, object>("Taxes", report.Expenses * tax);
-                pairs[4] = new KeyValuePair<string, object>("FinancialResult",report.TotalIncomes - report.Expenses * tax);
+                pairs[0] = new KeyValuePair<string, object>("VendorName",report.Key);
+                pairs[3] = new KeyValuePair<string, object>("Incomes",totalIncome);
+                pairs[2] = new KeyValuePair<string, object>("Expenses",expenses);
+                pairs[1] = new KeyValuePair<string, object>("Taxes", taxes);
+                pairs[4] = new KeyValuePair<string, object>("FinancialResult",totalIncome / (1 + taxes) - expenses);
                 InsertRow(pairs);
             }
         }

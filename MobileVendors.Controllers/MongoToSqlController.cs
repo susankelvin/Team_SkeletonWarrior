@@ -18,7 +18,7 @@
             this.sqlController = new SQLController();
         }
 
-        public void ExportData()
+        public void TransferData()
         {
             this.ExportVendors();
             this.ExportTowns();

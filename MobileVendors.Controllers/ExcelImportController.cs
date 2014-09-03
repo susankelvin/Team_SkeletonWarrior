@@ -13,6 +13,15 @@
         private readonly IMobileVendorsData data = new MobileVendorsData();
 
         private static string extractPath;
+        
+        public void ImportExcelReportsToSql(string zipPath, string sheetName)
+        {
+            string tempDirectory = Path.Combine(Path.GetTempPath(), Path.GetRandomFileName());
+            Directory.CreateDirectory(tempDirectory);
+            extractPath = tempDirectory;
+            ZipFile.ExtractToDirectory(zipPath, tempDirectory);
+            GetExcelReports(tempDirectory, sheetName, extractPath);
+        }
 
         private void GetExcelReports(string path, string sheetName, string extractPath)
         {
@@ -77,15 +86,6 @@
             {
                 GetExcelReports(directory, sheetName, extractPath);
             }
-        }
-
-        public void GetReports(string zipPath, string sheetName)
-        {
-            string tempDirectory = Path.Combine(Path.GetTempPath(), Path.GetRandomFileName());
-            Directory.CreateDirectory(tempDirectory);
-            extractPath = tempDirectory;
-            ZipFile.ExtractToDirectory(zipPath, tempDirectory);
-            GetExcelReports(tempDirectory, sheetName, extractPath);
         }
     }
 }

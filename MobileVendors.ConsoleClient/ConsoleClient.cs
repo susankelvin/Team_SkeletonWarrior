@@ -20,7 +20,7 @@
         private static void MongoToSqlExport()
         {
             MongoToSqlController exporter = new MongoToSqlController();
-            exporter.ExportData();
+            exporter.TransferData();
         }
 
         private static void ExcelReportsImportToSql()
@@ -28,14 +28,14 @@
             string zipPath = @"..\..\SampleReports.zip";
             string sheetName = "Sheet1$";
             ExcelImportController excelImport = new ExcelImportController();
-            excelImport.GetReports(zipPath, sheetName);
+            excelImport.ImportExcelReportsToSql(zipPath, sheetName);
         }
 
         private static void CreateJsonReports()
         {
             var data = new MobileVendorsData();
             JsonReportController jrc = new JsonReportController(data);
-            jrc.CreateReport();
+            jrc.CreateReports();
         }
 
         private static void ImportMySqlReports()
@@ -48,7 +48,7 @@
         private static void CreateExcelReports()
         {
             var excelController = new ExcelExportController("financial-report.xlsx");
-            excelController.ExportData();
+            excelController.GenerateReport();
         }
 
         private static void CreateXmlReports()

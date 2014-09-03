@@ -51,7 +51,7 @@ namespace MobileVendors.Controllers
             Console.WriteLine("Document {0} created.", fileName);
         }
 
-        public List<VendorExpenses> ImportXmlReport()
+        internal List<VendorExpenses> ImportXmlReport()
         {
             List<VendorExpenses> storesExpenses = new List<VendorExpenses>();
 
