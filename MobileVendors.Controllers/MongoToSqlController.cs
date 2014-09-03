@@ -36,25 +36,25 @@
         private void ExportTowns()
         {
             ICollection<MongoDBTown> townsFromMongo = this.mongoController.GetDistinctTowns();
-            this.sqlController.PopulateVendors(townsFromMongo);
+            this.sqlController.PopulateTowns(townsFromMongo);
         }
 
         private void ExportCategories()
         {
             ICollection<MongoDBCategory> categoriesFromMongo = this.mongoController.GetDistinctCategories();
-            this.sqlController.PopulateVendors(categoriesFromMongo);
+            this.sqlController.PopulateCategories(categoriesFromMongo);
         }
 
         private void ExportStore()
         {
             ICollection<MongoDBStore> storesFromMongo = this.mongoController.GetStores();
-            this.sqlController.PopulateVendors(storesFromMongo);
+            this.sqlController.PopulateStores(storesFromMongo);
         }
 
         private void ExportServices()
         {
             ICollection<MongoDBService> servicesFromMongo = this.mongoController.GetServices();
-            this.sqlController.PopulateVendors(servicesFromMongo);
+            this.sqlController.PopulateServices(servicesFromMongo);
         }
     }
 }

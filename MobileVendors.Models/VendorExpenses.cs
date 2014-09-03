@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace MobileVendors.Models
 {
-    public class StoreExpenses
+    public class VendorExpenses
     {
-        public string StoreName { get; set; }
+        public string VendorName { get; set; }
 
         public List<KeyValuePair<String, String>> ExpensesPerMonth { get; set; }
 
-        public StoreExpenses()
+        public VendorExpenses()
         {
             this.ExpensesPerMonth = new List<KeyValuePair<string, string>>();
         }

@@ -20,6 +20,8 @@
 
         public string Email { get; set; }
 
+        public decimal? Expenses { get; set; }
+
         public virtual ICollection<Store> Stores
         {
             get

@@ -19,8 +19,8 @@ namespace MobileVendors.Controllers
         public XmlController()
         {
             this.path = "../../XMLReports";
-            //SQLController sqlController = new SQLController();
-            //this.reports = sqlController.GetTotalIncomeByDate();
+            SQLController sqlController = new SQLController();
+            this.reports = sqlController.GetTotalIncomeByDate();
         }
         public void ExportXmlReport()
         {
@@ -51,30 +51,30 @@ namespace MobileVendors.Controllers
             Console.WriteLine("Document {0} created.", fileName);
         }
 
-        public List<StoreExpenses> ImportXmlReport()
+        public List<VendorExpenses> ImportXmlReport()
         {
-            List<StoreExpenses> storesExpenses = new List<StoreExpenses>();
+            List<VendorExpenses> storesExpenses = new List<VendorExpenses>();
 
-            using (XmlReader reader = XmlReader.Create(this.path + "/Expenses-Per-Store-Report.xml"))
+            using (XmlReader reader = XmlReader.Create(this.path + "/Expenses-Per-Vendor-Report.xml"))
             {
-                StoreExpenses storeExpenses = null;
+                VendorExpenses vendorExpenses = null;
 
                 while (reader.Read())
                 {
                     if ((reader.NodeType == XmlNodeType.Element))
                     {
-                        if (reader.Name == "store")
+                        if (reader.Name == "vendor")
                         {
-                            storeExpenses = new StoreExpenses();
-                            storeExpenses.StoreName = reader.GetAttribute("name");
+                            vendorExpenses = new VendorExpenses();
+                            vendorExpenses.VendorName = reader.GetAttribute("name");
                         }
                         else if (reader.Name == "expenses")
                         {
                             KeyValuePair<String, String> expenses = new KeyValuePair<string, string>(reader.GetAttribute("month"), reader.ReadElementString());
 
-                            storeExpenses.ExpensesPerMonth.Add(expenses);
+                            vendorExpenses.ExpensesPerMonth.Add(expenses);
 
-                            storesExpenses.Add(storeExpenses);
+                            storesExpenses.Add(vendorExpenses);
                         }
                     }
                 }

@@ -3,11 +3,9 @@
     using System;
     using System.Collections.Generic;
     using System.Linq;
-
     using MobileVendors.Data;
     using MobileVendors.Models;
     using MobileVendors.Models.MongoDBModels;
-    using System.Globalization;
 
     internal class SQLController
     {
@@ -20,20 +18,37 @@
 
         public void PopulateVendors(ICollection<MongoDBVendor> vendors)
         {
+            var xmlController = new XmlController();
+
+            var expensesPerVendor = xmlController.ImportXmlReport();
+
             foreach (var vendor in vendors)
             {
+                var epxense = expensesPerVendor.FirstOrDefault(e => e.VendorName.Substring(0, 3) == vendor.VendorName.Substring(0, 3));
+                decimal? expenses = null;
+                if (epxense != null)
+                {
+                    var expense = epxense.ExpensesPerMonth;
+                    expenses = 0;
+                    foreach (var exp in expense)
+                    {
+                        expenses += Decimal.Parse(exp.Value);
+                    }
+                }
+
                 Vendor vendorSQL = new Vendor()
                 {
                     VendorName = vendor.VendorName,
                     PhoneNumber = vendor.PhoneNumber,
-                    Email = vendor.Email
+                    Email = vendor.Email,
+                    Expenses = expenses
                 };
                 this.data.Vendors.Add(vendorSQL);
             }
             this.data.SaveChanges();
         }
 
-        public void PopulateVendors(ICollection<MongoDBTown> towns)
+        public void PopulateTowns(ICollection<MongoDBTown> towns)
         {
             foreach (var town in towns)
             {
@@ -47,7 +62,7 @@
             this.data.SaveChanges();
         }
 
-        public void PopulateVendors(ICollection<MongoDBCategory> categories)
+        public void PopulateCategories(ICollection<MongoDBCategory> categories)
         {
             foreach (var category in categories)
             {
@@ -61,7 +76,7 @@
             this.data.SaveChanges();
         }
 
-        public void PopulateVendors(ICollection<MongoDBStore> stores)
+        public void PopulateStores(ICollection<MongoDBStore> stores)
         {
             foreach (var store in stores)
             {
@@ -79,7 +94,7 @@
             this.data.SaveChanges();
         }
 
-        public void PopulateVendors(ICollection<MongoDBService> services)
+        public void PopulateServices(ICollection<MongoDBService> services)
         {
             foreach (var service in services)
             {
@@ -100,15 +115,14 @@
         public List<ServicesReport> GetTotalIncomeByDate()
         {
             var subsciptions = from sb in this.data.Subscriptions.All()
-                              join s in this.data.Services.All()
-                              on sb.ServiceId equals s.Id
-                              group sb by new {s.ServiceName, sb.SubscribeDate} into sbs
-                              select new
-                              {
-                                  Date = sbs.Key.SubscribeDate,
-                                  TotalSum = sbs.Sum(x=>x.TotalIncome*x.Quantity*x.PeriodInYears),
-                                  Name = sbs.Key.ServiceName
-                              };
+                               join s in this.data.Services.All() on sb.ServiceId equals s.Id
+                               group sb by new { s.ServiceName, sb.SubscribeDate }
+                               into sbs select new
+                               {
+                                   Date = sbs.Key.SubscribeDate,
+                                   TotalSum = sbs.Sum(x => x.TotalIncome * x.Quantity * x.PeriodInYears),
+                                   Name = sbs.Key.ServiceName
+                               };
 
             List<ServicesReport> servicesReports = new List<ServicesReport>();
 
@@ -124,8 +138,7 @@
             }
 
             return servicesReports;
-        } 
-
+        }
 
         private int FidTownIdByStore(MongoDBStore store)
         {

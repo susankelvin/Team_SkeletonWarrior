@@ -3,18 +3,18 @@
     using System;
     using MobileVendors.Controllers;
     using MobileVendors.Data;
-    using MySqlDataAccessModel;
 
     internal class ConsoleClient
     {
         private static void Main()
         {
-            //MongoToSqlExport();
-            //ExcelReportsImportToSql();
-            //CreateJsonReports();
-            ImportMySqlReports();
+            MongoToSqlExport();
+            ExcelReportsImportToSql();
+            CreateJsonReports();
+            CreateXmlReports();
+            //ImportMySqlReports();
             //CreateExcelReports();
-            //CreateXmlReports();
+            
         }
 
         private static void MongoToSqlExport()

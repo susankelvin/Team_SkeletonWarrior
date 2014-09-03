@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<expenses-per-vendor>
+  <vendor name="Medna Tel">
+    <expenses month="Jul-2014">14000</expenses>
+    <expenses month="Aug-2014">16000</expenses>
+  </vendor>
+  <vendor name="Globalizator">
+    <expenses month="Jul-2014">10000</expenses>
+    <expenses month="Aug-2014">11200</expenses>
+  </vendor>
+  <vendor name="BOB s nadenitza">
+    <expenses month="Jul-2014">9870</expenses>
+    <expenses month="Aug-2014">13250</expenses>
+  </vendor>
+</expenses-per-vendor>
