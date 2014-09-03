@@ -8,13 +8,13 @@
     {
         private static void Main()
         {
-            MongoToSqlExport();
-            ExcelReportsImportToSql();
-            CreateJsonReports();
-            CreateXmlReports();
+            //MongoToSqlExport();
+            //ExcelReportsImportToSql();
+            //CreateJsonReports();
+            //CreateXmlReports();
+            CreatePdfReports();
             //ImportMySqlReports();
             //CreateExcelReports();
-            
         }
 
         private static void MongoToSqlExport()
@@ -36,6 +36,12 @@
             var data = new MobileVendorsData();
             JsonReportController jrc = new JsonReportController(data);
             jrc.CreateReports();
+        }
+
+        private static void CreatePdfReports()
+        {
+            var controller = new PdfReportController();
+            controller.GeneratePdfExport(new DateTime(2014, 08, 29), new DateTime(2014, 09, 4), @"..\..\Sales.pdf");
         }
 
         private static void ImportMySqlReports()

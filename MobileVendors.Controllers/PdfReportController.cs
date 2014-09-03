@@ -2,21 +2,20 @@
 {
     using System;
     using System.Linq;
-
     using MigraDoc.DocumentObjectModel;
     using MigraDoc.DocumentObjectModel.Tables;
     using MigraDoc.Rendering;
-
     using MobileVendors.Data;
 
     public class PdfReportController
     {
         private readonly IMobileVendorsData data;
+
         private Document document;
+
         private Table table;
 
-        public PdfReportController()
-            : this(new MobileVendorsData())
+        public PdfReportController() : this(new MobileVendorsData())
         {
         }
 
@@ -77,18 +76,18 @@
         private void FillData(DateTime from, DateTime to)
         {
             var reportData = this.data.Subscriptions
-                .SearchFor(s => s.SubscribeDate >= from && s.SubscribeDate < to)
-                .Select(s => new
-                {
-                    Date = s.SubscribeDate,
-                    Service = s.Service.ServiceName,
-                    Price = s.Service.Price,
-                    Period = s.PeriodInYears,
-                    Quantity = s.Quantity,
-                    Store = s.Store.Vendor.VendorName + " " + s.Store.Town.TownName + " " + s.Store.Address,
-                    Sum = s.TotalIncome
-                })
-                .GroupBy(s => s.Date);
+                                 .SearchFor(s => s.SubscribeDate >= from && s.SubscribeDate < to)
+                                 .Select(s => new
+                                 {
+                                     Date = s.SubscribeDate,
+                                     Service = s.Service.ServiceName,
+                                     Price = s.Service.Price,
+                                     Period = s.PeriodInYears,
+                                     Quantity = s.Quantity,
+                                     Store = s.Store.Vendor.VendorName + " " + s.Store.Town.TownName + " " + s.Store.Address,
+                                     Sum = s.TotalIncome
+                                 })
+                                 .GroupBy(s => s.Date);
 
             var grandTotal = 0m;
             Row row = default(Row);
@@ -127,9 +126,9 @@
                     row.Cells[3].AddParagraph(report.Quantity.ToString());
                     row.Cells[4].AddParagraph(report.Store);
                     row.Cells[5].Format.Alignment = ParagraphAlignment.Right;
-                    row.Cells[5].AddParagraph(report.Sum.ToString());
+                    row.Cells[5].AddParagraph((report.Price * report.Quantity).ToString());
 
-                    total += report.Sum;
+                    total += report.Price * report.Quantity;
                 }
 
                 row = this.table.AddRow();
