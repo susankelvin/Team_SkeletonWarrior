@@ -50,9 +50,12 @@
                             var dateAsString = string.Format("{0}.{1}.2014", month, day);
                            
                             DateTime date = date = DateTime.Parse(dateAsString);
-
-                            var storeId = new Random().Next(1, 60);
-
+                            var dash = fileName.IndexOf('-');
+                            var vendor = fileName.Substring(0, dash);
+                            var town = fileName.Substring(dash + 1, fileName.Length - vendor.Length - 5);
+                            var storeId = this.data.Stores.All()
+                                              .Where(s => s.Vendor.VendorName.Substring(0, 3) == vendor.Substring(0, 3) &&
+                                                          s.Town.TownName == town).First().Id;
                             var report = new Subscription()
                             {
                                 Quantity = quantity,

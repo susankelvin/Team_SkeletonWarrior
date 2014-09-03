@@ -8,11 +8,11 @@
     {
         private static void Main()
         {
-            MongoToSqlExport();
-            ExcelReportsImportToSql();
-            //CreateJsonReports();
-            //CreateExcelReports();
-            CreateXmlReports();
+            //MongoToSqlExport();
+            //ExcelReportsImportToSql();
+            CreateJsonReports();
+            CreateExcelReports();
+            //CreateXmlReports();
         }
 
         private static void MongoToSqlExport()
