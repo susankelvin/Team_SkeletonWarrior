@@ -9,12 +9,12 @@
     {
         private static void Main()
         {
-            MongoToSqlExport();
+            //MongoToSqlExport();
             //ExcelReportsImportToSql();
-            CreateJsonReports();
+            //CreateJsonReports();
+            ImportMySqlReports();
             //CreateExcelReports();
             //CreateXmlReports();
-            CreateMySqlReports();
         }
 
         private static void MongoToSqlExport()
@@ -38,6 +38,13 @@
             jrc.CreateReport();
         }
 
+        private static void ImportMySqlReports()
+        {
+            var data = new MobileVendorsData();
+            var mysql = new MySqlController();
+            mysql.UploadReports(data);
+        }
+
         private static void CreateExcelReports()
         {
             var excelController = new ExcelExportController("financial-report.xlsx");
@@ -48,13 +55,6 @@
         {
             XmlController xmlController = new XmlController();
             xmlController.ExportXmlReport();
-        }
-
-        private static void CreateMySqlReports()
-        {
-            var data = new MobileVendorsData();
-            var mysql = new MySqlController();
-            mysql.UploadReports(data);
         }
     }
 }
