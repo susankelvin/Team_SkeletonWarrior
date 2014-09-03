@@ -3,16 +3,18 @@
     using System;
     using MobileVendors.Controllers;
     using MobileVendors.Data;
+    using MySqlDataAccessModel;
 
     internal class ConsoleClient
     {
         private static void Main()
         {
-            //MongoToSqlExport();
+            MongoToSqlExport();
             //ExcelReportsImportToSql();
-            //CreateJsonReports();
+            CreateJsonReports();
             //CreateExcelReports();
             //CreateXmlReports();
+            CreateMySqlReports();
         }
 
         private static void MongoToSqlExport()
@@ -23,7 +25,7 @@
 
         private static void ExcelReportsImportToSql()
         {
-            string zipPath = @"..\..\..\SampleReports.zip";
+            string zipPath = @"..\..\SampleReports.zip";
             string sheetName = "Sheet1$";
             ExcelImportController excelImport = new ExcelImportController();
             excelImport.GetReports(zipPath, sheetName);
@@ -46,6 +48,13 @@
         {
             XmlController xmlController = new XmlController();
             xmlController.ExportXmlReport();
+        }
+
+        private static void CreateMySqlReports()
+        {
+            var data = new MobileVendorsData();
+            var mysql = new MySqlController();
+            mysql.UploadReports(data);
         }
     }
 }

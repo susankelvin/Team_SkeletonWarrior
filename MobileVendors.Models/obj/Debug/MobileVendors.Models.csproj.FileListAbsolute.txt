@@ -94,3 +94,4 @@ C:\Users\plamen.yovchev\Documents\GitHub\Team_SkeletonWarrior\MobileVendors.Mode
 C:\Users\plamen.yovchev\Documents\GitHub\Team_SkeletonWarrior\MobileVendors.Models\obj\Debug\MobileVendors.Models.csprojResolveAssemblyReference.cache
 C:\Users\plamen.yovchev\Documents\GitHub\Team_SkeletonWarrior\MobileVendors.Models\obj\Debug\MobileVendors.Models.dll
 C:\Users\plamen.yovchev\Documents\GitHub\Team_SkeletonWarrior\MobileVendors.Models\obj\Debug\MobileVendors.Models.pdb
+D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MobileVendors.Models\obj\Debug\MobileVendors.Models.csprojResolveAssemblyReference.cache
