@@ -29,7 +29,7 @@
                                     {
                                         Id = s.Id,
                                         ProductName = s.Service.ServiceName,
-                                        VendorName = s.Store.Vendor.VendorName,
+                                        VendorName = s.Store.Address,
                                         TotalIncome = s.TotalIncome,
                                         Quantity = s.Quantity
                                     })

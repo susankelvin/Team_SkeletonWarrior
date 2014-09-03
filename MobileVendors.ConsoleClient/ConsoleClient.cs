@@ -14,7 +14,7 @@
             CreateJsonReports();
             //CreateExcelReports();
             //CreateXmlReports();
-            CreateMySqlReports();
+            //CreateMySqlReports();
         }
 
         private static void MongoToSqlExport()

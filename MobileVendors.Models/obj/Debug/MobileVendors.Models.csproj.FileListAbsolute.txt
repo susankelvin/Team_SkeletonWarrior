@@ -95,3 +95,19 @@ C:\Users\plamen.yovchev\Documents\GitHub\Team_SkeletonWarrior\MobileVendors.Mode
 C:\Users\plamen.yovchev\Documents\GitHub\Team_SkeletonWarrior\MobileVendors.Models\obj\Debug\MobileVendors.Models.dll
 C:\Users\plamen.yovchev\Documents\GitHub\Team_SkeletonWarrior\MobileVendors.Models\obj\Debug\MobileVendors.Models.pdb
 D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MobileVendors.Models\obj\Debug\MobileVendors.Models.csprojResolveAssemblyReference.cache
+D:\Gemini\DEV\Akademy\Temp\Teamwork\MobileVendors.Models\bin\Debug\MobileVendors.Models.dll
+D:\Gemini\DEV\Akademy\Temp\Teamwork\MobileVendors.Models\bin\Debug\MobileVendors.Models.pdb
+D:\Gemini\DEV\Akademy\Temp\Teamwork\MobileVendors.Models\bin\Debug\EntityFramework.dll
+D:\Gemini\DEV\Akademy\Temp\Teamwork\MobileVendors.Models\bin\Debug\EntityFramework.SqlServer.dll
+D:\Gemini\DEV\Akademy\Temp\Teamwork\MobileVendors.Models\bin\Debug\MongoDB.Bson.dll
+D:\Gemini\DEV\Akademy\Temp\Teamwork\MobileVendors.Models\bin\Debug\MongoDB.Driver.dll
+D:\Gemini\DEV\Akademy\Temp\Teamwork\MobileVendors.Models\bin\Debug\System.Data.SQLite.dll
+D:\Gemini\DEV\Akademy\Temp\Teamwork\MobileVendors.Models\bin\Debug\System.Data.SQLite.EF6.dll
+D:\Gemini\DEV\Akademy\Temp\Teamwork\MobileVendors.Models\bin\Debug\System.Data.SQLite.Linq.dll
+D:\Gemini\DEV\Akademy\Temp\Teamwork\MobileVendors.Models\bin\Debug\EntityFramework.xml
+D:\Gemini\DEV\Akademy\Temp\Teamwork\MobileVendors.Models\bin\Debug\EntityFramework.SqlServer.xml
+D:\Gemini\DEV\Akademy\Temp\Teamwork\MobileVendors.Models\bin\Debug\MongoDB.Bson.xml
+D:\Gemini\DEV\Akademy\Temp\Teamwork\MobileVendors.Models\bin\Debug\MongoDB.Driver.xml
+D:\Gemini\DEV\Akademy\Temp\Teamwork\MobileVendors.Models\bin\Debug\System.Data.SQLite.xml
+D:\Gemini\DEV\Akademy\Temp\Teamwork\MobileVendors.Models\obj\Debug\MobileVendors.Models.dll
+D:\Gemini\DEV\Akademy\Temp\Teamwork\MobileVendors.Models\obj\Debug\MobileVendors.Models.pdb
