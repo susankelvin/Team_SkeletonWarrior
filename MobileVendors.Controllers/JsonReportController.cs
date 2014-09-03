@@ -3,11 +3,8 @@
     using System;
     using System.IO;
     using System.Linq;
-
     using Newtonsoft.Json.Linq;
-
     using MobileVendors.Data;
-    
 
     public class JsonReportController
     {
@@ -27,7 +24,7 @@
             var subscriptions = this.data.Subscriptions.All()
                                     .Select(s => new
                                     {
-                                        Id = s.Id,
+                                        Id = s.ServiceId,
                                         ProductName = s.Service.ServiceName,
                                         VendorName = s.Store.Vendor.VendorName,
                                         TotalIncome = s.TotalIncome,
@@ -42,21 +39,27 @@
                 JObject product = new JObject();
                 product["product-id"] = first.Id;
                 product["product-name"] = first.ProductName;
-                product["vendor-name"] = first.VendorName;
 
-                int totalQuantity = 0;
-                decimal totalIncome = 0;
-
-                foreach (var item in sub)
+                var groupsByVendor = sub.GroupBy(v => v.VendorName).ToList();
+                var counter = 1;
+                foreach (var vendor in groupsByVendor)
                 {
-                    totalQuantity += item.Quantity;
-                    totalIncome += item.TotalIncome;
-                }
+                    product["vendor-name"] = vendor.Key;
 
-                product["total-quantity-sold"] = totalQuantity;
-                product["total-incomes"] = totalIncome;
-                
-                this.WriteReportToFile(product.ToString(), first.Id.ToString());
+                    int totalQuantity = 0;
+                    decimal totalIncome = 0;
+                    var vendorSub = sub.Where(s => s.VendorName == vendor.Key);
+                    
+                    foreach (var item in vendorSub)
+                    {
+                        totalQuantity += item.Quantity;
+                        totalIncome += item.TotalIncome;
+                    }
+                    product["total-quantity-sold"] = totalQuantity;
+                    product["total-incomes"] = totalIncome * totalQuantity;
+                    this.WriteReportToFile(product.ToString(), first.Id.ToString() + counter);
+                    counter++;
+                }
             }
         }
 
