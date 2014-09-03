@@ -13,14 +13,17 @@ namespace MobileVendors.Controllers
     public class XmlController
     {
         private List<ServicesReport> reports;
+
+        private string path;
+
         public XmlController()
         {
-            SQLController sqlController = new SQLController();
-            this.reports = sqlController.GetTotalIncomeByDate();
+            this.path = "../../../XMLReports";
+            //SQLController sqlController = new SQLController();
+            //this.reports = sqlController.GetTotalIncomeByDate();
         }
         public void ExportXmlReport()
         {
-            string path = "../../../XMLReports";
             if (!Directory.Exists(path))
             {
                 DirectoryInfo dir = Directory.CreateDirectory(path);
@@ -40,7 +43,7 @@ namespace MobileVendors.Controllers
                 foreach (ServicesReport serviceReport in this.reports)
                 {
                     String date = serviceReport.Date.ToString("yyyy-MM-dd");
-                    WriteBook(writer, serviceReport.ServiceName, date, serviceReport.TotalSum.ToString());     
+                    WriteSale(writer, serviceReport.ServiceName, date, serviceReport.TotalSum.ToString());     
                 }
                 writer.WriteEndElement();
                 writer.WriteEndDocument();
@@ -48,7 +51,39 @@ namespace MobileVendors.Controllers
             Console.WriteLine("Document {0} created.", fileName);
         }
 
-        private static void WriteBook(XmlWriter writer, string service, string date, string totalSum)
+        public List<StoreExpenses> ImportXmlReport()
+        {
+            List<StoreExpenses> storesExpenses = new List<StoreExpenses>();
+
+            using (XmlReader reader = XmlReader.Create(this.path + "/Expenses-Per-Store-Report.xml"))
+            {
+                StoreExpenses storeExpenses = null;
+
+                while (reader.Read())
+                {
+                    if ((reader.NodeType == XmlNodeType.Element))
+                    {
+                        if (reader.Name == "store")
+                        {
+                            storeExpenses = new StoreExpenses();
+                            storeExpenses.StoreName = reader.GetAttribute("name");
+                        }
+                        else if (reader.Name == "expenses")
+                        {
+                            KeyValuePair<String, String> expenses = new KeyValuePair<string, string>(reader.GetAttribute("month"), reader.ReadElementString());
+
+                            storeExpenses.ExpensesPerMonth.Add(expenses);
+
+                            storesExpenses.Add(storeExpenses);
+                        }
+                    }
+                }
+            }
+
+            return storesExpenses;
+        }
+
+        private static void WriteSale(XmlWriter writer, string service, string date, string totalSum)
         {
             writer.WriteStartElement("sale");
             writer.WriteAttributeString("service", service);

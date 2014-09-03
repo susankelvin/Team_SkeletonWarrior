@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<expenses-per-store>
+  <store name="Center">
+    <expenses month="Jul-2014">14000</expenses>
+    <expenses month="Aug-2014">16000</expenses>
+  </store>
+  <store name="Mladost">
+    <expenses month="Jul-2014">10000</expenses>
+    <expenses month="Aug-2014">11200</expenses>
+  </store>
+  <store name="Iztochen">
+    <expenses month="Jul-2014">9870</expenses>
+    <expenses month="Aug-2014">13250</expenses>
+  </store>
+  <store name="Zapaden">
+    <expenses month="Jul-2014">26280</expenses>
+    <expenses month="Aug-2014">4250</expenses>
+  </store>
+  <store name="Nadezhda">
+    <expenses month="Jul-2014">17230</expenses>
+    <expenses month="Aug-2014">19300</expenses>
+  </store> 
+  <store name="Liulin">
+    <expenses month="Jul-2014">80000</expenses>
+    <expenses month="Aug-2014">100000</expenses>
+  </store>
+</expenses-per-store>

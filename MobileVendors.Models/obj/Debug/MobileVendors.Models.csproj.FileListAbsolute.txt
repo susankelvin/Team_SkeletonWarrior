@@ -76,3 +76,21 @@ D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrio
 D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MobileVendors.Models\bin\Debug\System.Data.SQLite.xml
 D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MobileVendors.Models\obj\Debug\MobileVendors.Models.dll
 D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MobileVendors.Models\obj\Debug\MobileVendors.Models.pdb
+C:\Users\plamen.yovchev\Documents\GitHub\Team_SkeletonWarrior\MobileVendors.Models\bin\Debug\MobileVendors.Models.dll
+C:\Users\plamen.yovchev\Documents\GitHub\Team_SkeletonWarrior\MobileVendors.Models\bin\Debug\MobileVendors.Models.pdb
+C:\Users\plamen.yovchev\Documents\GitHub\Team_SkeletonWarrior\MobileVendors.Models\bin\Debug\EntityFramework.dll
+C:\Users\plamen.yovchev\Documents\GitHub\Team_SkeletonWarrior\MobileVendors.Models\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\plamen.yovchev\Documents\GitHub\Team_SkeletonWarrior\MobileVendors.Models\bin\Debug\MongoDB.Bson.dll
+C:\Users\plamen.yovchev\Documents\GitHub\Team_SkeletonWarrior\MobileVendors.Models\bin\Debug\MongoDB.Driver.dll
+C:\Users\plamen.yovchev\Documents\GitHub\Team_SkeletonWarrior\MobileVendors.Models\bin\Debug\MySql.Data.dll
+C:\Users\plamen.yovchev\Documents\GitHub\Team_SkeletonWarrior\MobileVendors.Models\bin\Debug\System.Data.SQLite.dll
+C:\Users\plamen.yovchev\Documents\GitHub\Team_SkeletonWarrior\MobileVendors.Models\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\plamen.yovchev\Documents\GitHub\Team_SkeletonWarrior\MobileVendors.Models\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\plamen.yovchev\Documents\GitHub\Team_SkeletonWarrior\MobileVendors.Models\bin\Debug\EntityFramework.xml
+C:\Users\plamen.yovchev\Documents\GitHub\Team_SkeletonWarrior\MobileVendors.Models\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\plamen.yovchev\Documents\GitHub\Team_SkeletonWarrior\MobileVendors.Models\bin\Debug\MongoDB.Bson.xml
+C:\Users\plamen.yovchev\Documents\GitHub\Team_SkeletonWarrior\MobileVendors.Models\bin\Debug\MongoDB.Driver.xml
+C:\Users\plamen.yovchev\Documents\GitHub\Team_SkeletonWarrior\MobileVendors.Models\bin\Debug\System.Data.SQLite.xml
+C:\Users\plamen.yovchev\Documents\GitHub\Team_SkeletonWarrior\MobileVendors.Models\obj\Debug\MobileVendors.Models.csprojResolveAssemblyReference.cache
+C:\Users\plamen.yovchev\Documents\GitHub\Team_SkeletonWarrior\MobileVendors.Models\obj\Debug\MobileVendors.Models.dll
+C:\Users\plamen.yovchev\Documents\GitHub\Team_SkeletonWarrior\MobileVendors.Models\obj\Debug\MobileVendors.Models.pdb
