@@ -10,11 +10,11 @@
         {
             //MongoToSqlExport();
             //ExcelReportsImportToSql();
-            //CreateJsonReports();
-            //CreateXmlReports();
+            CreateJsonReports();
+            CreateXmlReports();
             CreatePdfReports();
-            //ImportMySqlReports();
-            //CreateExcelReports();
+            ImportMySqlReports();
+            CreateExcelReports();
         }
 
         private static void MongoToSqlExport()

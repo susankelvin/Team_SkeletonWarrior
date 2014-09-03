@@ -46,7 +46,6 @@
                                                VendorName = s.Store.Vendor.VendorName,
                                                TotalIncome = s.TotalIncome,
                                                Quantity = s.Quantity
-                                               //TO DO Include Expenses...
                                            })
                                            .GroupBy(s => s.ProductName)
                                            .ToList();
@@ -72,12 +71,11 @@
                         totalQuantity += item.Quantity;
                         totalIncome += item.TotalIncome;
                     }
-
+                    
                     report.TotalQuantity = totalQuantity;
                     report.TotalIncomes = (long)totalIncome * totalQuantity;
-                    
-                    // TODO: Include expenses.
-                    // report.Expenses = ???
+                    report.Expenses = (long)data.Vendors.All().First(v => v.VendorName == vendor.Key).Expenses;
+                   
                     reports.Add(report);
                 }
             }

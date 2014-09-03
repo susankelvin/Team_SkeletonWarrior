@@ -44,23 +44,23 @@
             var sqliteController = new TaxesData();
             var mySqlController = new MySqlController();
             var reports = mySqlController.GetReports();
-            var groupedReportsByVendor = reports.GroupBy(v => v.VendorName);
+            var groupedReportsByVendor = reports.GroupBy(v => v.ProductName);
 
             var pairs = new KeyValuePair<string, object>[5];
 
             foreach (var report in groupedReportsByVendor)
             {
-                var vendorName = report.Key;
-                var totalIncome = reports.Where(r => r.VendorName == vendorName).Sum(inc => inc.TotalIncomes);
-                var tax = sqliteController.Taxes.All().Where(t => t.ServiceName == vendorName); 
+                var productName = report.Key;
+                var totalIncome = reports.Where(r => r.ProductName == productName).Sum(inc => inc.TotalIncomes);
+                var tax = sqliteController.Taxes.All().Where(t => t.ServiceName == productName); 
                 var taxes = tax.Sum(t => t.Tax) / tax.Count();
-                var expenses = reports.First(r => r.VendorName == vendorName).Expenses;
+                var expenses = reports.First(r => r.ProductName == productName).Expenses;
                 
-                pairs[0] = new KeyValuePair<string, object>("VendorName",report.Key);
+                pairs[0] = new KeyValuePair<string, object>("ServiceName",report.Key);
                 pairs[3] = new KeyValuePair<string, object>("Incomes",totalIncome);
                 pairs[2] = new KeyValuePair<string, object>("Expenses",expenses);
                 pairs[1] = new KeyValuePair<string, object>("Taxes", taxes);
-                pairs[4] = new KeyValuePair<string, object>("FinancialResult",totalIncome / (1 + taxes) - expenses);
+                pairs[4] = new KeyValuePair<string, object>("FinancialResult",totalIncome / (1 + taxes) - expenses * 2);
                 InsertRow(pairs);
             }
         }

@@ -185,8 +185,6 @@ D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrio
 D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MobileVendors.ConsoleClient\bin\Debug\MobileVendors.MySqlDataAccessModel.dll
 D:\Users\Athila\Documents\Telerik academy\Databases\Teamwork\Team_SkeletonWarrior\MobileVendors.ConsoleClient\bin\Debug\MobileVendors.MySqlDataAccessModel.pdb
 C:\Users\ShOnZi\Desktop\TelerikAcademy\Databases\Homework\SkeletonWarriorTeam_MobileVendors\MobileVendors.ConsoleClient\bin\Debug\Telerik.OpenAccess.35.Extensions.dll
-C:\Users\ShOnZi\Desktop\TelerikAcademy\Databases\Homework\SkeletonWarriorTeam_MobileVendors\MobileVendors.ConsoleClient\bin\Debug\Telerik.OpenAccess.dll
-C:\Users\ShOnZi\Desktop\TelerikAcademy\Databases\Homework\SkeletonWarriorTeam_MobileVendors\MobileVendors.ConsoleClient\bin\Debug\Telerik.OpenAccess.xml
 C:\Users\ShOnZi\Desktop\TelerikAcademy\Databases\Homework\SkeletonWarriorTeam_MobileVendors\MobileVendors.ConsoleClient\bin\Debug\Telerik.OpenAccess.35.Extensions.xml
 C:\Users\plt3ch\Documents\GitHub\Team_SkeletonWarrior\MobileVendors.ConsoleClient\bin\Debug\x64\SQLite.Interop.dll
 C:\Users\plt3ch\Documents\GitHub\Team_SkeletonWarrior\MobileVendors.ConsoleClient\bin\Debug\x86\SQLite.Interop.dll
@@ -270,5 +268,4 @@ C:\Users\plamen.yovchev\Documents\GitHub\Team_SkeletonWarrior\MobileVendors.Cons
 C:\Users\ShOnZi\Desktop\TelerikAcademy\Databases\Homework\SkeletonWarriorTeam_MobileVendors\MobileVendors.ConsoleClient\bin\Debug\MySqlDataAccessModel.dll
 C:\Users\ShOnZi\Desktop\TelerikAcademy\Databases\Homework\SkeletonWarriorTeam_MobileVendors\MobileVendors.ConsoleClient\bin\Debug\MySqlDataAccessModel.pdb
 C:\Users\ShOnZi\Desktop\TelerikAcademy\Databases\Homework\SkeletonWarriorTeam_MobileVendors\MobileVendors.ConsoleClient\bin\Debug\Telerik.OpenAccess.40.Extensions.dll
-C:\Users\ShOnZi\Desktop\TelerikAcademy\Databases\Homework\SkeletonWarriorTeam_MobileVendors\MobileVendors.ConsoleClient\bin\Debug\Telerik.OpenAccess.Runtime.dll
 C:\Users\ShOnZi\Desktop\TelerikAcademy\Databases\Homework\SkeletonWarriorTeam_MobileVendors\MobileVendors.ConsoleClient\bin\Debug\Telerik.OpenAccess.40.Extensions.xml

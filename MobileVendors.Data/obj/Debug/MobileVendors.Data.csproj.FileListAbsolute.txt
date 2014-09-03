@@ -114,3 +114,7 @@ C:\Users\plamen.yovchev\Documents\GitHub\Team_SkeletonWarrior\MobileVendors.Data
 C:\Users\plamen.yovchev\Documents\GitHub\Team_SkeletonWarrior\MobileVendors.Data\obj\Debug\MobileVendors.Data.csprojResolveAssemblyReference.cache
 C:\Users\plamen.yovchev\Documents\GitHub\Team_SkeletonWarrior\MobileVendors.Data\obj\Debug\MobileVendors.Data.dll
 C:\Users\plamen.yovchev\Documents\GitHub\Team_SkeletonWarrior\MobileVendors.Data\obj\Debug\MobileVendors.Data.pdb
+C:\Users\ShOnZi\Desktop\TelerikAcademy\Databases\Homework\SkeletonWarriorTeam_MobileVendors\MobileVendors.Data\bin\Debug\Telerik.OpenAccess.35.Extensions.dll
+C:\Users\ShOnZi\Desktop\TelerikAcademy\Databases\Homework\SkeletonWarriorTeam_MobileVendors\MobileVendors.Data\bin\Debug\Telerik.OpenAccess.40.Extensions.dll
+C:\Users\ShOnZi\Desktop\TelerikAcademy\Databases\Homework\SkeletonWarriorTeam_MobileVendors\MobileVendors.Data\bin\Debug\Telerik.OpenAccess.35.Extensions.xml
+C:\Users\ShOnZi\Desktop\TelerikAcademy\Databases\Homework\SkeletonWarriorTeam_MobileVendors\MobileVendors.Data\bin\Debug\Telerik.OpenAccess.40.Extensions.xml
