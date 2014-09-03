@@ -13,9 +13,6 @@
             //CreateJsonReports();
             //CreateExcelReports();
             //CreateXmlReports();
-            XmlController bla = new XmlController();
-
-            bla.ImportXmlReport();
         }
 
         private static void MongoToSqlExport()

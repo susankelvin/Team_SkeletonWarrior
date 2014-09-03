@@ -18,7 +18,7 @@ namespace MobileVendors.Controllers
 
         public XmlController()
         {
-            this.path = "../../../XMLReports";
+            this.path = "../../XMLReports";
             //SQLController sqlController = new SQLController();
             //this.reports = sqlController.GetTotalIncomeByDate();
         }
