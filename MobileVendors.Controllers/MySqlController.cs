@@ -45,7 +45,7 @@
                 {
                     ProductID = a.Id,
                     ProductName = a.Service.ServiceName,
-                    VendorName = a.Store.Vendor.VendorName,
+                    VendorName = a.Store.Address,
                     TotalIncomes = a.TotalIncome,
                     TotalQuantity = a.Quantity,
 
